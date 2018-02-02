@@ -1,0 +1,146 @@
+.footer-w {
+  color: #a0a0a0;
+  font-size: 12px;
+  margin-bottom: 2%;
+  position: relative;
+  z-index: 50;
+  @include inb;
+  font-family: $fontyh;
+}
+.footer-o{
+  position: relative;
+  width: 100%;
+}
+.footer-i{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+}
+
+.footer {
+  margin: 2rem auto 0;
+  width: 1260px;
+  overflow: hidden;
+  @include dc;
+  @include respond-to(md){
+    width: 1000px;
+    margin: 0 3%;
+  }
+  @include respond-to(sm){
+    width: 94%;
+    margin: 1% 3%;
+  }
+  &.select {
+    visibility: visible;
+    opacity: 1;
+    height:inherit;
+  }
+}
+
+.footer:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.footer-logo {
+  float: left;
+  margin: 0 10px 0 30px;
+  @include respond-to(md){
+     margin: 0 4px 0 10px;
+  }
+  @include respond-to(sm){
+      margin: 0 0 10px;
+      font-size: 0;
+      text-align: center;
+      float: none;
+  }
+}
+
+.footer-logo li {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 20px 0 0;
+  @include respond-to(md){
+     margin: 0 3px 0 0;
+  }
+  @include respond-to(sm){
+      margin: 0 20px;
+  }
+}
+
+.footer-logo__riot {
+  display: block;
+  width: 68px;
+  height: 46px;
+  background-image: url(../img/copyright-sprite-32.png);
+} 
+.footer-logo__garena {
+  margin: 3px 0 0;
+  display: block;
+  width: 45px;
+  height: 42px;
+  background-image: url(../img/copyright-sprite-32.png);
+  background-position: 80px -53px;
+}
+.footer-copyrights {
+  float: left;
+  width: 550px;
+  margin: 0 10px 0 0;
+  @include respond-to(md){
+    width: 410px;
+    margin: 0 5px 0 0;
+  }
+  @include respond-to(sm){
+    margin: 0 auto 6px;
+    float: none;
+    width: 100%;
+    text-align:center;
+  }
+}
+.footer-localinfo {
+  font-size: 12px;
+}
+.footer-localinfo span {
+  display: block;
+  color: #4280da;
+}
+.footer-localinfo-w {
+  position: relative;
+  width: 290px;
+  padding: 0 40px 0 60px;
+  font-size: 0;
+  float: left;
+  @include respond-to(md){
+    width: 240px;
+    padding: 0 35px 0 55px;
+  }
+  @include respond-to(sm){
+    float: none;
+    width: auto;
+    padding: 0 40px 10px 60px;
+  }
+}
+.footer-localinfo__lv {
+  position: absolute;
+  width: 48px;
+  height: 47px;
+  background-image: url(../img/copyright-sprite-32.png);
+  background-position: -69px 0;
+  left: 0;
+  top: 0;
+}
+.footer-localinfo__fb {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/copyright-sprite-32.png);
+  background-position: -118px 0;
+  right: 0;
+  top: 0;
+}
+
+
+

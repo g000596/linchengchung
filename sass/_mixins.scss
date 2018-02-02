@@ -1,0 +1,243 @@
+$fontxm: arial, PMingLiU,\65B0\7D30\660E\9AD4;
+$fontjh: arial, 'Microsoft JhengHei',\5FAE\8EDF\6B63\9ED1\9AD4,PMingLiU,\65B0\7D30\660E\9AD4;
+$fontyh: 'Noto Sans TC400','Beaufort','Microsoft YaHei',\5FAE\8F6F\96C5\9ED1, PMingLiU, \65B0\7D30\660E\9AD4;
+$fontyh1: 'Noto Sans TC500','Beaufort','Microsoft YaHei',\5FAE\8F6F\96C5\9ED1, PMingLiU, \65B0\7D30\660E\9AD4;
+@font-face {
+  font-family: 'Beaufort';
+  src: url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.eot");
+  src: url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.eot?#iefix") format("embedded-opentype"), url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.woff") format("woff"), url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.ttf") format("truetype"), url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.svg#0e0a948fd562036c3b27e99b819fa71f") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*
+* Noto Sans TC (Chinese_traditional) http://www.google.com/fonts/earlyaccess
+ */
+@font-face {
+  font-family: 'Noto Sans TC100';
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Thin.woff2) format('woff2'),
+       url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Thin.woff) format('woff'),
+       url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Thin.otf) format('opentype');
+}
+@font-face {
+  font-family: 'Noto Sans TC300';
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Light.woff2) format('woff2'),
+       url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Light.woff) format('woff'),
+       url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Light.otf) format('opentype');
+}
+@font-face {
+   font-family: 'Noto Sans TC400';
+   font-style: normal;
+   font-weight: 400;
+   src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Regular.woff2) format('woff2'),
+        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Regular.woff) format('woff'),
+        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Regular.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans TC500';
+   font-style: normal;
+   font-weight: 500;
+   src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.woff2) format('woff2'),
+        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.woff) format('woff'),
+        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans TC700';
+   font-style: normal;
+   font-weight: 700;
+   src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.woff2) format('woff2'),
+        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.woff) format('woff'),
+        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.otf) format('opentype');
+ }
+@font-face {
+   font-family: 'Noto Sans TC900';
+   font-style: normal;
+   font-weight: 900;
+   src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Black.woff2) format('woff2'),
+        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Black.woff) format('woff'),
+        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Black.otf) format('opentype');
+ }
+
+
+%clearfix{
+	// *zoom:1;
+	&:after{
+		clear:both;
+		content:"";
+		display:table;
+	}
+}
+
+@mixin clearfix{
+	// *zoom:1;
+	&:after{
+		clear:both;
+		content:"";
+		display:table;
+	}
+} 
+@mixin htxt($d: a){
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+
+	@if $d == b {
+		display: block;
+	}
+}
+
+%inbw{
+	font-size: 0;
+}
+
+@mixin inbw{
+	font-size: 0;
+}
+
+@mixin inb($v: top){
+	display: inline-block;
+	// *display: inline;
+	// *zoom:1;
+	vertical-align: $v;
+}
+@mixin inner($t: 0, $b: 0){
+	width: 1000px;
+	margin: $t auto $b;
+}
+@mixin mid($t: 0, $b: 0){
+	margin: $t auto $b;
+}
+
+@mixin ellipsis($e: n){
+	overflow: hidden;
+	white-space: nowrap;
+	@if $e == e{
+		text-overflow:ellipsis;
+	}
+}
+
+@mixin arrow($dir: left,$color: #000,$width: 4px){
+	display:inline-block;
+	font-size:0;
+	line-height:0;
+	width:0;
+	height:0;
+	border:dashed $width;
+	border-#{$dir}-style:solid;
+	border-color:transparent;
+	border-#{$dir}-color:$color;
+}
+
+@mixin triangle($dir: left,$color: #000,$bdt:4px,$bdr:4px,$bdb:4px,$bdl:4px){
+	font-size:0;
+	line-height:0;
+	width:0;
+	height:0;
+	border-top:solid $bdt;
+	border-bottom:solid $bdb;
+	border-left:solid $bdl;
+	border-right:solid $bdr;
+	border-color:transparent;
+	border-#{$dir}-color:$color;
+}
+
+
+%ovtable{
+	table-layout: fixed;
+	th,td{
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+$browsershack: (
+	ie8m : \0screen\,screen\9,
+	ie8 : \0screen,
+	ie9 : 'all and (min-width:0\\0) and (min-resolution: .001dpcm)',
+	ie10p  : 'screen and (-ms-high-contrast: active), (-ms-high-contrast: none)',
+	chrome : screen and (-webkit-min-device-pixel-ratio:0),
+	ff : screen and (-moz-images-in-menus:0),
+	edge: '(-ms-accelerator:true)'
+);
+  
+@mixin browser($name) {
+	@if $name == edge {
+		@supports #{map-get($browsershack, $name)} {
+			@content;
+		}
+	}@else{
+		@media #{map-get($browsershack, $name)} {
+			@content;
+		}		
+	}
+}
+
+
+$baseFSoffset: 100;
+@mixin respond-to($name) {
+    @media #{map-get($breakpoints, $name)} {
+        @content;
+    }
+}
+@mixin px2rem($prop, $values...){
+	$max: length($values);
+	$remValues: '';
+
+	@for $i from 1 through $max {
+		$value: nth($values, $i);
+
+		@if type-of($value) == string{
+			$remValues: #{$remValues + $value};
+		} @else {
+			$remValues: #{$remValues + $value / $baseFSoffset}rem;
+		}
+		
+
+		@if $i < $max {
+		  $remValues: #{$remValues + " "};
+		}
+	}
+	#{$prop}: $remValues; 
+} 
+
+@mixin dc($dynamic: all ease 0.2s ) {
+  -webkit-transition: $dynamic;
+  -moz-transition: $dynamic;
+  -ms-transition: $dynamic;
+  -o-transition: $dynamic;
+  transition: $dynamic;
+}
+
+
+@mixin animation($delay, $duration, $animation, $frequency, $forwards,$timing) {
+  -webkit-animation-delay: $delay;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-name: $animation;
+  -webkit-animation-iteration-count: $frequency;
+  -webkit-animation-fill-mode: $forwards;
+  -webkit-animation-timing-function: $timing;
+  -moz-animation-delay: $delay;
+  -moz-animation-duration: $duration;
+  -moz-animation-name: $animation;
+  -moz-animation-iteration-count: $frequency;
+  -moz-animation-fill-mode: $forwards;
+  -o-animation-delay: $delay;
+  -o-animation-duration: $duration;
+  -moz-animation-name: $animation;
+  -moz-animation-iteration-count: $frequency;
+  -moz-animation-timing-function: $timing;
+  -o-animation-fill-mode: $forwards;
+  -o-animation-timing-function: $timing;
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $animation;
+  animation-iteration-count: $frequency;
+  animation-fill-mode: $forwards;
+  animation-timing-function: $timing;
+}
+
+

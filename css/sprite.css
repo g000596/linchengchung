@@ -1,0 +1,90 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-ca-l {
+  background-image: url(../img/team-sprite.png);
+  background-position: -108px -220px;
+  width: 108px;
+  height: 105px;
+}
+.icon-ca {
+  background-image: url(../img/team-sprite.png);
+  background-position: -328px 0px;
+  width: 70px;
+  height: 68px;
+}
+.icon-cn-l {
+  background-image: url(../img/team-sprite.png);
+  background-position: -220px 0px;
+  width: 108px;
+  height: 105px;
+}
+.icon-cn-map {
+  background-image: url(../img/team-sprite.png);
+  background-position: -110px 0px;
+  width: 110px;
+  height: 110px;
+}
+.icon-cn {
+  background-image: url(../img/team-sprite.png);
+  background-position: -328px -68px;
+  width: 70px;
+  height: 68px;
+}
+.icon-jp-l {
+  background-image: url(../img/team-sprite.png);
+  background-position: -220px -105px;
+  width: 108px;
+  height: 105px;
+}
+.icon-jp-map {
+  background-image: url(../img/team-sprite.png);
+  background-position: 0px 0px;
+  width: 110px;
+  height: 110px;
+}
+.icon-jp {
+  background-image: url(../img/team-sprite.png);
+  background-position: -216px -220px;
+  width: 70px;
+  height: 68px;
+}
+.icon-na-map {
+  background-image: url(../img/team-sprite.png);
+  background-position: -110px -110px;
+  width: 110px;
+  height: 110px;
+}
+.icon-tw-l {
+  background-image: url(../img/team-sprite.png);
+  background-position: 0px -220px;
+  width: 108px;
+  height: 105px;
+}
+.icon-tw-map {
+  background-image: url(../img/team-sprite.png);
+  background-position: 0px -110px;
+  width: 110px;
+  height: 110px;
+}
+.icon-tw {
+  background-image: url(../img/team-sprite.png);
+  background-position: -328px -136px;
+  width: 70px;
+  height: 68px;
+}

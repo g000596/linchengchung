@@ -1,0 +1,61 @@
+@mixin hover($h:1.2) {
+    -webkit-filter: brightness($h);
+    transition: .4s;
+}
+
+//--漸層
+//($color1:#cbac62, $color2:#66481f)
+@mixin gradient($color1:#dfcea2, $color2:#73632f) {
+    background: -webkit-linear-gradient(top, $color1 0, $color2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+//--邊線
+@mixin border1($color1:#dfcea2, $color2:#73632f) {
+    border-image: linear-gradient(to top, $color2 0, $color1 100%) 1;
+}
+
+@mixin border2($color2:rgba(223, 206, 162, 0), $color1:#73632f) {
+    border-image: linear-gradient(90deg, $color2 0, $color1 40%, $color1 60%, $color2 100%) 1;
+}
+
+//---環
+@mixin ring($w:200px, $h:200px, $b:3px, $c1:#72542a, $c2:#bd9e5e) {
+    max-width: 100%;
+    padding: $b;
+    width: $w;
+    height: $h;
+    background: -webkit-gradient(linear, left top, right top, from($c1), to($c2));
+    background: linear-gradient(90deg, $c1 0%, $c2 100%);
+    border-radius: 50%;
+    div {
+        border-radius: inherit;
+        position: relative;
+        background: #000;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+//--按鈕
+@mixin btn {
+    cursor: pointer;
+    height: 30px;
+    color: #d3c7a9;
+    background-color: transparent;
+    border: 2px solid;
+    border-image: linear-gradient(0deg, #6b5024, #987630, #987630, #b88d35, #c8aa6e) 1;
+    box-shadow: inset 0 0 1px 1px rgba(23, 23, 25, .3), 0 0 2px 2px rgba(23, 23, 25, .3);
+//    transition: .2s;
+    &:hover {
+        color: #91b0b4;
+        border-image: linear-gradient(#09ffff, #137475) 1;
+    }
+}
+
+@mixin tmid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
