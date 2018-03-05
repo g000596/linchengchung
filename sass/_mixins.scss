@@ -9,58 +9,61 @@ $fontyh1: 'Noto Sans TC500','Beaufort','Microsoft YaHei',\5FAE\8F6F\96C5\9ED1, P
   font-weight: normal;
   font-style: normal;
 }
-/*
-* Noto Sans TC (Chinese_traditional) http://www.google.com/fonts/earlyaccess
- */
-@font-face {
-  font-family: 'Noto Sans TC100';
-  font-style: normal;
-  font-weight: 100;
-  src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Thin.woff2) format('woff2'),
-       url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Thin.woff) format('woff'),
-       url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Thin.otf) format('opentype');
-}
-@font-face {
-  font-family: 'Noto Sans TC300';
-  font-style: normal;
-  font-weight: 300;
-  src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Light.woff2) format('woff2'),
-       url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Light.woff) format('woff'),
-       url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Light.otf) format('opentype');
-}
-@font-face {
-   font-family: 'Noto Sans TC400';
-   font-style: normal;
-   font-weight: 400;
-   src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Regular.woff2) format('woff2'),
-        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Regular.woff) format('woff'),
-        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Regular.otf) format('opentype');
- }
-@font-face {
-   font-family: 'Noto Sans TC500';
-   font-style: normal;
-   font-weight: 500;
-   src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.woff2) format('woff2'),
-        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.woff) format('woff'),
-        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.otf) format('opentype');
- }
-@font-face {
-   font-family: 'Noto Sans TC700';
-   font-style: normal;
-   font-weight: 700;
-   src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.woff2) format('woff2'),
-        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.woff) format('woff'),
-        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.otf) format('opentype');
- }
-@font-face {
-   font-family: 'Noto Sans TC900';
-   font-style: normal;
-   font-weight: 900;
-   src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Black.woff2) format('woff2'),
-        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Black.woff) format('woff'),
-        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Black.otf) format('opentype');
- }
 
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+    font-family: 'Noto Sans TC';
+}
+//
+//@font-face {
+//  font-family: 'Noto Sans TC100';
+//  font-style: normal;
+//  font-weight: 100;
+//  src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Thin.woff2) format('woff2'),
+//       url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Thin.woff) format('woff'),
+//       url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Thin.otf) format('opentype');
+//}
+//@font-face {
+//  font-family: 'Noto Sans TC300';
+//  font-style: normal;
+//  font-weight: 300;
+//  src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Light.woff2) format('woff2'),
+//       url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Light.woff) format('woff'),
+//       url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Light.otf) format('opentype');
+//}
+//@font-face {
+//   font-family: 'Noto Sans TC400';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Regular.woff2) format('woff2'),
+//        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Regular.woff) format('woff'),
+//        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Regular.otf) format('opentype');
+// }
+//@font-face {
+//   font-family: 'Noto Sans TC500';
+//   font-style: normal;
+//   font-weight: 500;
+//   src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.woff2) format('woff2'),
+//        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.woff) format('woff'),
+//        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.otf) format('opentype');
+// }
+//@font-face {
+//   font-family: 'Noto Sans TC700';
+//   font-style: normal;
+//   font-weight: 700;
+//   src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.woff2) format('woff2'),
+//        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.woff) format('woff'),
+//        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.otf) format('opentype');
+// }
+//@font-face {
+//   font-family: 'Noto Sans TC900';
+//   font-style: normal;
+//   font-weight: 900;
+//   src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Black.woff2) format('woff2'),
+//        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Black.woff) format('woff'),
+//        url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Black.otf) format('opentype');
+// }
+//
 
 %clearfix{
 	// *zoom:1;
