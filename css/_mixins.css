@@ -1,0 +1,10 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@font-face {
+  font-family: 'Beaufort';
+  src: url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.eot");
+  src: url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.eot?#iefix") format("embedded-opentype"), url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.woff") format("woff"), url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.ttf") format("truetype"), url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.svg#0e0a948fd562036c3b27e99b819fa71f") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+* {
+  font-family: 'Noto Sans TC'; }

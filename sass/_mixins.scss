@@ -1,18 +1,18 @@
-$fontxm: arial, PMingLiU,\65B0\7D30\660E\9AD4;
-$fontjh: arial, 'Microsoft JhengHei',\5FAE\8EDF\6B63\9ED1\9AD4,PMingLiU,\65B0\7D30\660E\9AD4;
-$fontyh: 'Noto Sans TC400','Beaufort','Microsoft YaHei',\5FAE\8F6F\96C5\9ED1, PMingLiU, \65B0\7D30\660E\9AD4;
-$fontyh1: 'Noto Sans TC500','Beaufort','Microsoft YaHei',\5FAE\8F6F\96C5\9ED1, PMingLiU, \65B0\7D30\660E\9AD4;
-@font-face {
-  font-family: 'Beaufort';
-  src: url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.eot");
-  src: url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.eot?#iefix") format("embedded-opentype"), url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.woff") format("woff"), url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.ttf") format("truetype"), url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.svg#0e0a948fd562036c3b27e99b819fa71f") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
+//$fontxm: arial, PMingLiU,\65B0\7D30\660E\9AD4;
+//$fontjh: arial, 'Microsoft JhengHei',\5FAE\8EDF\6B63\9ED1\9AD4,PMingLiU,\65B0\7D30\660E\9AD4;
+//$fontyh: 'Noto Sans TC400','Beaufort','Microsoft YaHei',\5FAE\8F6F\96C5\9ED1, PMingLiU, \65B0\7D30\660E\9AD4;
+//$fontyh1: 'Noto Sans TC500','Beaufort','Microsoft YaHei',\5FAE\8F6F\96C5\9ED1, PMingLiU, \65B0\7D30\660E\9AD4;
+//@font-face {
+//  font-family: 'Beaufort';
+//  src: url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.eot");
+//  src: url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.eot?#iefix") format("embedded-opentype"), url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.woff") format("woff"), url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.ttf") format("truetype"), url("https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/BeaufortforLOL-Regular.svg#0e0a948fd562036c3b27e99b819fa71f") format("svg");
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//
 @import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
 * {
-    font-family: 'Noto Sans TC';
+//    font-family:'ms mincho';
 }
 //
 //@font-face {
@@ -106,8 +106,9 @@ $fontyh1: 'Noto Sans TC500','Beaufort','Microsoft YaHei',\5FAE\8F6F\96C5\9ED1, P
 	// *zoom:1;
 	vertical-align: $v;
 }
-@mixin inner($t: 0, $b: 0){
-	width: 1000px;
+@mixin inner($t: 0, $b: 0,$w:1000px){
+	width: 100%;
+	max-width: $w;
 	margin: $t auto $b;
 }
 @mixin mid($t: 0, $b: 0){
