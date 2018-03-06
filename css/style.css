@@ -74,7 +74,7 @@ body {
   height: 100%; }
 
 body {
-  font-family: 'Noto Sans TC','Microsoft JhengHei','ms mincho';
+  font-family: 'Noto Sans TC', 'Microsoft JhengHei', 'ms mincho';
   color: #444; }
 
 img {
@@ -132,8 +132,11 @@ p {
   .box h2 {
     padding: 60px 0; }
   .box .more {
-    padding: 120px 0;
-    width: 700px;
+    padding: 120px 10px;
+    width: 100%;
+    max-width: 700px;
     margin: 0 auto; }
+    .box .more p {
+      padding-bottom: 30px; }
   .box .row > div {
     padding: 10px; }
