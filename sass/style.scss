@@ -12,6 +12,10 @@ $breakpoints: ( 'md': 'screen and (max-width: #{$lgw})', 'sm': 'screen and (max-
 //$colorbr1l:#66e8f5 3px solid;
 
 //-------footer-------
+.bar{
+        
+    padding-top: 10px;padding-bottom: 20px;    font-size: 0.7em;
+}
 .footer{
       text-align: right;
     padding-top: 10px;padding-bottom: 20px;    font-size: 0.7em;
