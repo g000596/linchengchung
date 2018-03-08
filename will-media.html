@@ -23,10 +23,10 @@
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css"> </head>
+<link rel="stylesheet" href="venobox/venobox.css" type="text/css" media="screen" />
 
 <body>
     <div class="center">
-
         <div class="box">
             <div class="more">
                 <h2>WILL x MEDIA</h2>
@@ -40,14 +40,13 @@
                 <p> 社会化された構造は、ほとんどの規範又は意識上の形態に制限をもたらした、一方我々はまた、それらの大部分を支配や構築することができるように願っています、この脈絡をもって、私達は撮影の媒介物の客観性を通して、媒質と意志の繋がりを見ます。一つの無生物の客体でさえ、その意志が作用している、それが純粋に物理的であろうと幻想的にまで広がっても、言い換えれば、私達が見るものは、全てが映像中の視覚的な客体ではない、そのため、私達はこれらの意志と媒質の繋がりが私達の環境でどのように整理されているかを調べようとします、そして最終的に、それらが私達に与えた仮説に対し、私達はそれについてどう構想するべきか。</p>
                 <hr>
                 <div class="row">
-                    <div class="col-md-4"><img src="./img/will-media/1.jpg"></div>
-                    <div class="col-md-4"><img src="./img/will-media/2.jpg"></div>
-                    <div class="col-md-4"><img src="./img/will-media/3.jpg"></div>
-                    <div class="col-md-4"><img src="./img/will-media/4.jpg"></div>
-                    <div class="col-md-4"><img src="./img/will-media/5.jpg"></div>
-                    <div class="col-md-4"><img src="./img/will-media/6.jpg"></div>
+                    <div class="col-md-4 venobox" data-gall="gallery01" href="./img/will-media/1.jpg" title="WILL x MEDIA"><img src="./img/will-media/1.jpg"></div>
+                      <div class="col-md-4 venobox" data-gall="gallery01" href="./img/will-media/2.jpg" title="WILL x MEDIA"><img src="./img/will-media/2.jpg"></div>
+                      <div class="col-md-4 venobox" data-gall="gallery01" href="./img/will-media/3.jpg" title="WILL x MEDIA"><img src="./img/will-media/3.jpg"></div>
+                      <div class="col-md-4 venobox" data-gall="gallery01" href="./img/will-media/4.jpg" title="WILL x MEDIA"><img src="./img/will-media/4.jpg"></div>
+                      <div class="col-md-4 venobox" data-gall="gallery01" href="./img/will-media/5.jpg" title="WILL x MEDIA"><img src="./img/will-media/5.jpg"></div>
+                      <div class="col-md-4 venobox" data-gall="gallery01" href="./img/will-media/6.jpg" title="WILL x MEDIA"><img src="./img/will-media/6.jpg"></div>
                 </div>
-                
             </div>
         </div>
         <div class="footer">lin.bullseye@gmail.com ｜ © Lin-cheng-chung. 2018</div>
@@ -59,6 +58,9 @@
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113875176-1"></script>
+    <!--    MIT License  http://veno.es/venobox/ -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="venobox/venobox.min.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -67,6 +69,18 @@
         }
         gtag('js', new Date());
         gtag('config', 'UA-113875176-1');
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.venobox').venobox();
+        });
+            $('.venobox').venobox({
+        framewidth: '1000px',        // default: ''
+//        frameheight: '100%',       // default: ''
+        numeratio: true,            // default: false
+        infinigall: true            // default: false
+    });
+        
     </script>
 </body>
 

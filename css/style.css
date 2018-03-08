@@ -120,6 +120,8 @@ hr {
   text-decoration: none; }
   .box h2 {
     padding: 60px 0; }
+  .box img {
+    cursor: pointer; }
   .box .more {
     padding: 120px 10px;
     width: 100%;
