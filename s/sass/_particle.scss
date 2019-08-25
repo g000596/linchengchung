@@ -1,0 +1,41 @@
+@import "mixins";
+#particle-container {
+  @include respond-to(md) {
+    display: none;
+  }
+}
+.particle {
+  z-index: 2;
+  position: absolute;
+  border-radius: 50%;
+}
+
+@for $i from 1 through 300 {
+  @keyframes move-#{$i} {
+    100% {
+      transform: translate3d((random(100) * 1vw), (random(100) * 1vh), (random(100) * 1px));
+    }
+  }
+
+  @keyframes opacity-#{$i} {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: random(100) / 50;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  .particle:nth-child(#{$i}) {
+    animation: move-#{$i} 360s infinite, opacity-#{$i} 5s infinite;
+    $size: random(3) + 0.35 + px;
+    height: $size;
+    width: $size;
+    animation-delay: -$i * 0.2s;
+    transform: translate3d((random(100) * 1vw), (random(100) * 1vh), (random(100) * 1px));
+    background: #a0a0a0;
+  }
+}

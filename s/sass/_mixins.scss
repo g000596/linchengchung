@@ -1,0 +1,175 @@
+$lgw: 1200px;
+$mdw: 992px;
+$sdw: 767.98px;
+$i4: 500px;
+$i3: 320px;
+$smw: $lgw + 20;
+$breakpoints: (
+  "lg": "screen and (max-width: #{$lgw})",
+  "md": "screen and (max-width: #{$mdw})",
+  "ssm": "screen and (max-width: #{$sdw})",
+  "sm": "screen and (max-width: #{$i4})"
+);
+
+$fontyh: 'Noto Sans TC400','Microsoft JhengHei',\5FAE\8F6F\96C5\9ED1, PMingLiU, \65B0\7D30\660E\9AD4;
+
+%clearfix{
+	// *zoom:1;
+	&:after{
+		clear:both;
+		content:"";
+		display:table;
+	}
+}
+
+@mixin clearfix{
+	// *zoom:1;
+	&:after{
+		clear:both;
+		content:"";
+		display:table;
+	}
+} 
+@mixin htxt($d: a){
+	text-indent: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+
+	@if $d == b {
+		display: block;
+	}
+}
+
+%inbw{
+	font-size: 0;
+}
+
+@mixin inbw{
+	font-size: 0;
+}
+
+@mixin inb($v: top){
+	display: inline-block;
+	// *display: inline;
+	// *zoom:1;
+	vertical-align: $v;
+}
+@mixin inner($t: 0, $b: 0){
+	width: 1000px;
+	margin: $t auto $b;
+}
+@mixin mid($t: 0, $b: 0){
+	margin: $t auto $b;
+}
+
+@mixin ellipsis($e: n){
+	overflow: hidden;
+	white-space: nowrap;
+	@if $e == e{
+		text-overflow:ellipsis;
+	}
+}
+
+@mixin arrow($dir: left,$color: #000,$width: 4px){
+	display:inline-block;
+	font-size:0;
+	line-height:0;
+	width:0;
+	height:0;
+	border:dashed $width;
+	border-#{$dir}-style:solid;
+	border-color:transparent;
+	border-#{$dir}-color:$color;
+}
+
+@mixin triangle($dir: left,$color: #000,$bdt:4px,$bdr:4px,$bdb:4px,$bdl:4px){
+	font-size:0;
+	line-height:0;
+	width:0;
+	height:0;
+	border-top:solid $bdt;
+	border-bottom:solid $bdb;
+	border-left:solid $bdl;
+	border-right:solid $bdr;
+	border-color:transparent;
+	border-#{$dir}-color:$color;
+}
+
+
+%ovtable{
+	table-layout: fixed;
+	th,td{
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+}
+
+$browsershack: (
+	ie8m : \0screen\,screen\9,
+	ie8 : \0screen,
+	ie9 : 'all and (min-width:0\\0) and (min-resolution: .001dpcm)',
+	ie10p  : 'screen and (-ms-high-contrast: active), (-ms-high-contrast: none)',
+	chrome : screen and (-webkit-min-device-pixel-ratio:0),
+	ff : screen and (-moz-images-in-menus:0),
+	edge: '(-ms-accelerator:true)'
+);
+ 
+
+$baseFSoffset: 100;
+@mixin respond-to($name) {
+    @media #{map-get($breakpoints, $name)} {
+        @content;
+    }
+}
+@mixin px2rem($prop, $values...){
+	$max: length($values);
+	$remValues: '';
+
+	@for $i from 1 through $max {
+		$value: nth($values, $i);
+
+		@if type-of($value) == string{
+			$remValues: #{$remValues + $value};
+		} @else {
+			$remValues: #{$remValues + $value / $baseFSoffset}rem;
+		}
+		
+
+		@if $i < $max {
+		  $remValues: #{$remValues + " "};
+		}
+	}
+	#{$prop}: $remValues; 
+} 
+
+@mixin dc($dynamic: all ease 0.2s ) {
+  -webkit-transition: $dynamic;
+  -moz-transition: $dynamic;
+  -ms-transition: $dynamic;
+  -o-transition: $dynamic;
+  transition: $dynamic;
+}
+
+
+@mixin animation($delay, $duration, $animation, $frequency, $forwards,$timing) {
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $animation;
+  animation-iteration-count: $frequency;
+  animation-fill-mode: $forwards;
+  animation-timing-function: $timing;
+    
+    
+}
+
+@mixin keyframes($animationName) { @-webkit-keyframes #{$animationName} { @content; } @-moz-keyframes #{$animationName} { @content; } @-o-keyframes #{$animationName} { @content; } @keyframes #{$animationName} { @content; } } 
+
+
+@mixin amid($t:0,$l:0,$b:0,$r:0){
+margin: auto;
+top: $t;
+left: $l;
+bottom: $b;
+right: $r;
+}
