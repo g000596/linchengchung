@@ -1,0 +1,212 @@
+@import "footer";
+@import "mixins";
+@import "reset";
+@import "animation";
+@import "login";
+$color1: #210325;
+$color2: #48354c;
+$color3: #ae3bbc;
+$color4: #45bf48;
+$color5: #b48fd0;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  font: 16px $fontyh;
+  background: #010101;
+}
+.center {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.bg0 {
+  background-image: url(../img/bg0.jpg);
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  min-height: 10.8rem;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @include respond-to(ssm) {
+    background-image: url(../img/bg0-m.jpg);
+    width: 100%;
+    height: 17rem;
+    background-size: cover;
+  }
+  @include respond-to(sm) {
+    height: 18.2rem;
+  }
+  .logo {
+    @include bgrem($size: contain);
+    background-image: url(../img/logo.png);
+    width: 3rem;
+    position: absolute;
+    height: 0.9rem;
+    top: 0.5rem;
+    left: 0.8rem;
+  }
+  .girl {
+    @include bgrem($size: contain);
+    background-image: url(../img/girl.png);
+    width: 8.33rem;
+    height: 11.44rem;
+    position: absolute;
+    padding-left: 7.7rem;
+    top: 0;
+    @include respond-to(ssm) {
+      display: none;
+    }
+  }
+}
+.bg1 {
+  background-image: url(../img/bg1.jpg);
+  width: 100%;
+  max-width: 1920px;
+  height: 18.2rem;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center top;
+  @include respond-to(ssm) {
+    background-image: none;
+    background-color: #7e0f24;
+    height: auto;
+  }
+  .more {
+    box-sizing: border-box;
+    background-color: #f7f7ea;
+    width: 100%;
+    border-radius: 4px;
+    padding: 0.2rem 1rem 0.8rem 1rem;
+    @include respond-to(ssm) {
+      border-radius: 0px;
+      width: 94%;
+      margin: 0 auto;
+      padding: 0.2rem 0.4rem 0.8rem 0.4rem;
+    }
+
+    table {
+      margin: 0 auto;
+      border: 1px solid #f7f7ea;
+      font-family: 微軟正黑體;
+      width: 100%;
+      max-width: 8rem;
+      text-align: center;
+      border-collapse: collapse;
+      @include respond-to(ssm) {
+        max-width: 100%;
+      }
+      th {
+        background-color: #fed680;
+        padding: 0.1rem;
+        border: 1px solid #f7f7ea;
+        color: #371616;
+        @include respond-to(ssm) {
+          font-size: 0.24rem;
+       
+        }
+        @include respond-to(sm) {
+          font-size: 0.4rem;
+         
+       
+        }
+        @media (max-width: 360px) {
+          font-size: 0.52rem;
+         
+        }
+      }
+      td {
+        border: 1px solid #f7f7ea;
+        padding: 0.05rem;
+        &:nth-child(1) {
+          background-color: #fed680;
+          color: #371616;
+        }
+        @include respond-to(ssm) {
+          font-size: 0.24rem;
+       
+        }
+        @include respond-to(sm) {
+          font-size: 0.4rem;
+         
+       
+        }
+        @media (max-width: 360px) {
+          font-size: 0.52rem;
+         
+        }
+      }
+      tr:nth-child(even) {
+        background-color: #fbe6b5;
+      }
+      tr:nth-child(odd) {
+        background-color: #f8f0d5;
+      }
+    }
+    ul {
+      list-style-type: decimal;
+      @include respond-to(ssm) {
+        padding-left: 0.5rem;
+      }
+      li {
+      }
+    }
+    p,
+    li {
+      font-weight: bold;
+      color: #371616;
+      font-size: 0.18rem;
+      letter-spacing: 0.01rem;
+      line-height: 0.3rem;
+      @include respond-to(ssm) {
+        font-size: 0.24rem;
+        letter-spacing: 0.01rem;
+        line-height: 0.6rem;
+      }
+      @include respond-to(sm) {
+        font-size: 0.4rem;
+        letter-spacing: 0.01rem;
+        line-height: 0.6rem;
+      }
+      @media (max-width: 360px) {
+        font-size: 0.52rem;
+        letter-spacing: 0.01rem;
+        line-height: 0.7rem;
+      }
+    }
+    hr {
+      margin-top: 0.5rem;
+    }
+    .text {
+      @include bgrem($size: contain);
+      width: 3.18rem;
+      height: 0.77rem;
+      margin-top: 0.4rem;
+      margin-bottom: 0.2rem;
+      &.ster1 {
+        background-image: url(../img/text-1.png);
+      }
+      &.ster2 {
+        background-image: url(../img/text-2.png);
+      }
+      &.ster3 {
+        background-image: url(../img/text-3.png);
+      }
+      &.ster4 {
+        background-image: url(../img/text-4.png);
+      }
+      @include respond-to(ssm) {
+        width: 5.18rem;
+        height: 1.77rem;
+        margin-top: 0.3rem;
+        margin-bottom: 0.1rem;
+      }
+    }
+  }
+}
