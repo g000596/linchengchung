@@ -10,7 +10,7 @@
 }
 .main-agileinfo {
   width: 4.8rem;
-  height: 4.6rem;
+  height: 4.8rem;
   background-color: rgba(72, 11, 32, 0.57);
   border-radius: 8px;
   @include respond-to(ssm) {
@@ -24,12 +24,18 @@
     padding: 0.4rem 0.5rem;
     box-sizing: border-box;
     text-align: center;
-    img {
+    .h2-text {
+      @include bgrem($size: contain);
+
+      background-image: url(../img/login-text.png);
       width: 100%;
       max-width: 2.5rem;
+      height: 0.4rem;
       padding-bottom: 0.1rem;
       @include respond-to(ssm) {
         max-width: 5rem;
+        height: 0.3rem;
+        margin-bottom: 0.2rem;
       }
     }
   }
@@ -126,6 +132,9 @@ input[type="submit"]:hover {
 }
 
 .wthree-text {
+  font-size: 0.16rem;
+  top: -0.15rem;
+  position: relative;
   @include respond-to(ssm) {
     span {
       font-size: 0.35rem;
@@ -171,8 +180,8 @@ input.checkbox:before {
 input.checkbox:after {
   content: "";
   position: absolute;
-  top: 0px;
-  left: 0;
+  top: 0;
+  left: 2px;
   z-index: 1;
   width: 0.2rem;
   height: 0.2rem;
@@ -184,6 +193,7 @@ input.checkbox:after {
   @include respond-to(ssm) {
     width: 0.6rem;
     height: 0.5rem;
+    top: -0.3rem;
   }
 }
 
@@ -198,7 +208,7 @@ input.checkbox:checked:after {
   border-top-color: transparent;
   border-right-color: transparent;
   @include respond-to(ssm) {
-    height: 0.2rem;
+    height: 0.1rem;
   }
 }
 
@@ -231,14 +241,30 @@ input.checkbox:checked:after {
 
 /*-- //checkbox --*/
 .btngo {
+  animation: fadeIn 1.5s forwards, highlight 0.7s infinite linear;
+  transition: filter 0.4s, transform 0.3s;
+  @keyframes highlight {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.03);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
   @include bgrem($size: contain);
   width: 3.26rem;
   height: 0.86rem;
   padding-top: 0.2rem;
   margin: 0 auto;
-
   border-style: none;
   outline: none;
+  &:hover{
+    filter:brightness(1.2);
+  }
   @include respond-to(sm) {
     @include bgrem($size: contain);
     background-size: contain;

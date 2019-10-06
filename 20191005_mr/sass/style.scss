@@ -60,6 +60,18 @@ body {
     position: absolute;
     padding-left: 7.7rem;
     top: 0;
+    animation:  forwards, gg 3s infinite linear alternate;
+    @keyframes gg {
+      0% {
+        transform: scale(1) translateX(-10px);
+      }
+      50% {
+        transform:  translateY(-10px);
+      }
+      100% {
+        transform: scale(1) translateX(0px);
+      }
+    }
     @include respond-to(ssm) {
       display: none;
     }
@@ -109,16 +121,12 @@ body {
         color: #371616;
         @include respond-to(ssm) {
           font-size: 0.24rem;
-       
         }
         @include respond-to(sm) {
           font-size: 0.4rem;
-         
-       
         }
         @media (max-width: 360px) {
           font-size: 0.52rem;
-         
         }
       }
       td {
@@ -130,16 +138,12 @@ body {
         }
         @include respond-to(ssm) {
           font-size: 0.24rem;
-       
         }
         @include respond-to(sm) {
           font-size: 0.4rem;
-         
-       
         }
         @media (max-width: 360px) {
           font-size: 0.52rem;
-         
         }
       }
       tr:nth-child(even) {
