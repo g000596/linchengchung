@@ -25,6 +25,7 @@ body {
   margin: 0 auto;
 }
 .bg0 {
+  overflow: hidden;
   background-image: url(../img/bg0.jpg),url(../img/bg0-a.jpg);
   height: 10.8rem;
   width: 100%;
@@ -72,7 +73,7 @@ body {
     width: 8.33rem;
     height: 11.44rem;
     position: absolute;
-    padding-left: 7.7rem;
+    padding-left: 7.2rem;
     top: 0;
     animation: forwards, gg 3s infinite linear alternate;
     @keyframes gg {
@@ -177,8 +178,7 @@ body {
       @include respond-to(ssm) {
         padding-left: 0.5rem;
       }
-      li {
-      }
+     
     }
     p,
     li {
