@@ -598,6 +598,7 @@ body {
   position: relative;
   background: url("../img/eventTop.jpg") 50% 0% no-repeat;
   background-size: 100%;
+  padding-top: 73%;
 }
 .event-content {
   position: relative;
@@ -632,6 +633,10 @@ body {
   background-size: contain;
   top: 73%;
 }
+/* .event-content a{
+position: relative;
+  padding-top: 73%;
+} */
 .event-content .contBtn:hover{
   transition:.8s;
   filter:brightness(1.4);
