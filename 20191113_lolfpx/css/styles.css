@@ -313,7 +313,7 @@ body {
   margin-left: -53%;
 }
 .float-right span {
-  display: block;
+  /* display: block; */
   padding: 58px 8px 8px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
