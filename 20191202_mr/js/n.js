@@ -6,4 +6,12 @@ $(document).ready(function(){
         $(".popup-bg").hide();
         $("#register").show();
     });
+    $("#btn1").click(function(){
+        $("#register").show();
+      
+    });
+    $("#btn2").click(function(){
+        $("#login").show();
+      
+    });
 });
