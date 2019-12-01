@@ -13,10 +13,7 @@ $color5: #b48fd0;
 
 html,
 body {
-  // @media all and (orientation: landscape) {
-  //   -webkit-transform: rotateZ(0deg);transform: rotateZ(0deg);
 
-  // }
   height: 100%;
 }
 
@@ -42,19 +39,7 @@ body {
 
   @include bgrem($size: cover);
   position: relative;
-  // animation: forwards, tab 1s infinite linear alternate;
-  // @keyframes tab {
-  //   0% {
-  //     background-image: url(../img/bg0-a.jpg);
-  //   }
 
-  //   100% {
-  //     background-image: url(../img/bg0.jpg);
-  //   }
-  // }
-  // @include respond-to(lg) {
-  //   min-height: auto;
-  // }
   @include respond-to(ssm) {
     // animation: tabb;
     background-image: url(../img/bg0-m.jpg);
@@ -168,34 +153,6 @@ body {
     }
   }
 
-  // .girl {
-  //   @include bgrem($size: contain);
-  //   background-image: url(../img/girl.png);
-  //   width: 8.33rem;
-  //   height: 11.44rem;
-  //   position: absolute;
-  //   padding-left: 7.2rem;
-  //   top: 0;
-  //   animation: forwards, gg 3s infinite linear alternate;
-
-  //   @keyframes gg {
-  //     0% {
-  //       transform: scale(1) translateX(-10px);
-  //     }
-
-  //     50% {
-  //       transform: translateY(-10px);
-  //     }
-
-  //     100% {
-  //       transform: scale(1) translateX(0px);
-  //     }
-  //   }
-
-  //   @include respond-to(ssm) {
-  //     display: none;
-  //   }
-  // }
 }
 
 .bg1 {
@@ -206,17 +163,7 @@ body {
   padding-bottom: 40px;
   position: relative;
   background-repeat: no-repeat;
-  // background-position: center top;
 
-  // @include respond-to(lg) {
-  //   min-height: auto;
-  // }
-
-  // @include respond-to(ssm) {
-  //   background-image: none;
-  //   background-color: #7e0f24;
-  //   height: auto;
-  // }
   @include respond-to(ssm) {
     padding: 0;
   }
@@ -225,10 +172,10 @@ body {
     background-repeat: no-repeat;
     width: 100%;
     max-width: 900px;
-    // height: 500px;
+
     @include respond-to(ssm) {
       width: 94%;
-      // height: 500px;
+
     }
     .swiper-wrapper {
       .swiper-slide {
