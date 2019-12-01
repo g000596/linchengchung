@@ -176,15 +176,6 @@ input[type="password"] {
   background-position: 0 0;
 }
 
-.text:focus::-webkit-input-placeholder,
-.text:valid::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 0.9em;
-  -webkit-transform: translateY(-30px);
-  transform: translateY(-30px);
-  visibility: visible !important;
-}
-
 ::-webkit-input-placeholder {
   color: #333;
   font-weight: 100;
