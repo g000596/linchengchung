@@ -142,7 +142,7 @@ table {
   }
 }
 
-input[type="number"],
+input[type="tel"],
 input[type="text"],
 input[type="email"],
 input[type="password"] {
@@ -205,13 +205,13 @@ input[type="password"] {
 }
 
 input[type="submit"] {
-  font-size: 0.9em;
+  font-size: 18px;
   color: #fff;
   background: #76b852;
   outline: none;
   border: 1px solid #76b852;
   cursor: pointer;
-  padding: 0.9em;
+  padding: 8px;
   -webkit-appearance: none;
   width: 100%;
   margin: 2em 0;
@@ -811,8 +811,8 @@ body {
   max-width: 1000px;
   height: 139px;
   position: relative;
-  -webkit-animation: forwards, textt 0.5s infinite linear alternate;
-          animation: forwards, textt 0.5s infinite linear alternate;
+  -webkit-animation: forwards, textt 0.3s infinite linear alternate;
+          animation: forwards, textt 0.3s infinite linear alternate;
 }
 
 @-webkit-keyframes textt {
