@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mr.Cat | 首存红利50% </title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+</head>
+
+<body>
+    <!-- popup 登入 -->
+    <div class="popup-bg" id="login">
+        <div class="popup-more banner">
+            <div class="close"></div>
+            <div class="login-box">
+                <div class="login">
+                    <div class="main-agileinfo">
+                        <div class="agileits-top">
+                            <form action="#" method="post">
+                                <input class="text" type="text" name="Username" placeholder="帐号" required=""
+                                    minlength="8" maxlength="16">
+                                <input class="text" type="password" name="password" placeholder="密码" required="">
+
+                            </form>
+                            <!-- <div class="clear">密碼錯誤!</div> -->
+                            <button class="btn-3" id="btn-3"></button>
+                            <button class="btn-4"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ppb"></div>
+    </div>
+    <!-- popup 登入 END -->
+    <!-- popup 註冊 -->
+    <div class="popup-bg" id="register" style="display: none;">
+        <div class="popup-more register">
+            <div class="close"></div>
+            <div class="login">
+                <div class="popup-text1"></div>
+                <div class="main-agileinfo">
+                    <div class="agileits-top">
+                        <form action="#" method="post">
+                            <input class="text" type="text" name="Username" placeholder="帐号" required="" minlength="8"
+                                maxlength="16">
+                            <input class="text" type="password" name="password" placeholder="密码" required="">
+                            <input class="text w3lpass" type="password" name="password" placeholder="确认密码" required="">
+                            <input class="text" type="text" placeholder="QQ" required="">
+                            <input class="" type="text" placeholder="手机(選填)">
+                        </form>
+                        <!-- <div class="clear">密碼錯誤!</div> -->
+                        <br>
+                        <button class="btn-5"></button>
+                        <div class="clear">*需完成三项验证找客服领取优惠 </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ppb"></div>
+    </div>
+    <!-- popup 註冊 END -->
+    <!-- popup 完成或其他訊息通知 -->
+    <div class="popup-bg" id="notice" style="display: none;">
+        <div class="popup-more notice">
+            <div class="close"></div>
+            <div class="more">
+                <div class="popup-text2"></div>
+                <div class="popup-icon"></div>
+                <div class="text-p">
+                    <p>恭喜完成注册！<br>
+                        赶快联系客服领取优惠吧！</p>
+                </div>
+                <a href="#"><button class="btn-6"></button></a> <a href="#"><button class="btn-7"></button></a>
+            </div>
+        </div>
+        <div class="ppb"></div>
+    </div>
+    <!-- popup 完成或其他訊息通知 END -->
+    <div class="pc-qr">
+        <a href=""><button></button></a>
+    </div>
+
+    <div class="bg0">
+        <div class="center">
+            <div class="logo"></div>
+            <div class="text"></div>
+            <h3>加入福利群領取更多優惠</h3>
+            <div class="btn-box">
+                <a href="https://www.mct188.com/cn/t/7577/1927?open=/register" target="_blank"><button
+                        class="btn1"></button></a>
+                <a href="https://www.mct188.com/cn/t/7577/1927?open=/register" target="_blank"><button
+                        class="btn2"></button></a>
+            </div>
+        </div>
+    </div>
+    <div class="bg1">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide n1"></div>
+                <div class="swiper-slide n2"></div>
+                <!-- <div class="swiper-slide n3"></div> -->
+                <!-- <div class="swiper-slide n4"></div> -->
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="m-qr">
+            <p>更多活动详情 欢迎加入</p>
+            <p><span>猫家族福利群 460076295</span></p>
+            <div class=""></div>
+        </div>
+    </div>
+    <div class="footer"></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/n.js"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script> -->
+    <!-- <script src="js/scripts.js"></script> -->
+    <!-- <script src="js/fontfz.js"></script> -->
+    <!-- <script src="js/aos.js"></script> -->
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            autoHeight: true, //enable auto height
+            // cssWidthAndHeight : true,
+            loop: true,
+            navigation: {
+
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                // clickable: true,
+                el: '.swiper-pagination',
+            },
+            autoplay: {
+                delay: 3000,
+
+            },
+        });
+    </script>
+
+    <script>
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000, // values from 0 to 3000, with step 50ms
+            easing: 'ease-in-out', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+
+    <!-- 追蹤代碼放置處  -->
+
+    <!--  -->
+</body>
+
+</html>

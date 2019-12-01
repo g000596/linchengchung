@@ -1,0 +1,27 @@
+@import "mixins";
+.footer {
+  z-index: 3;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-image: url(../img/footer-l.png);
+  width: 98%;
+  height: 80px;
+  position: relative;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @include respond-to(ssm) {
+    background-image: url(../img/footer-m.png);
+    background-size: 120%;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding-top: 45%;
+  }
+  // @include respond-to(sm) {
+  //   background-size: 140%;
+  //   height: 6rem;
+  // }
+}

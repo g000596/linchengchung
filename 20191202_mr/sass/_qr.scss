@@ -1,0 +1,60 @@
+@import "mixins";
+.pc-qr {
+  background-repeat: no-repeat;
+  top: 40%;
+  right: 0;
+  z-index: 2;
+  position: fixed;
+  background-image: url(../img/qr.png);
+  width: 160px;
+  height: 420px;
+  @include respond-to(lg) {
+    display: none;
+  }
+  button {
+    cursor: pointer;
+    position: absolute;
+    border-style: none;
+    outline: none;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/customer-btn.png);
+    background-position: center;
+    width: 160px;
+    height: 42px;
+    &:hover {
+      transition: 0.8s;
+      filter: brightness(1.2);
+    }
+  }
+}
+.m-qr {
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  display: none;
+  padding-top: 10px;
+  line-height: 50px;
+  font-size: 20px;
+  span {
+    padding: 10px 50px;
+    background: #484848;
+    border: 1px #fff solid;
+    font-size: 20px;
+  }
+  div{
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+    background-image: url(../img/qr-2.jpg);
+    width: 133px;height: 133px;
+    @include respond-to(ssm) {
+      display: none;
+    }
+  }
+  @include respond-to(lg) {
+    display: block;
+  }
+}

@@ -1,0 +1,194 @@
+@import "mixins";
+// animation: showup 0.5s forwards linear;
+// @keyframes showup {
+//   0% {
+//     -webkit-transform: scale(0);
+//     transform: scale(0);
+//   }
+//   80% {
+//     -webkit-transform: scale(1.05);
+//     transform: scale(1.05);
+//   }
+//   100% {
+//     -webkit-transform: scale(1);
+//     transform: scale(1);
+//   }
+// }
+.popup-bg {
+  .ppb {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    animation: showupbg 0.5s forwards linear;
+  }
+  button {
+    cursor: pointer;
+    width: 135px;
+    height: 40px;
+    border-style: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin: 2px;
+    @include respond-to(sm) {
+      width: 110px;
+      height: 40px;
+    }
+    &:hover {
+      transition: 0.8s;
+      filter: brightness(1.2);
+    }
+    &.btn-3 {
+      background-image: url(../img/btn-3.png);
+    }
+    &.btn-4 {
+      background-image: url(../img/btn-4.png);
+    }
+    &.btn-5 {
+      background-image: url(../img/btn-5.png);
+    }
+    &.btn-6 {
+      background-image: url(../img/btn-6.png);
+    }
+    &.btn-7 {
+      background-image: url(../img/btn-7.png);
+    }
+  }
+  position: fixed;
+  z-index: 59;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  animation: showupbg 0.5s forwards linear;
+
+  @keyframes showupbg {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .popup-more {
+    border: 1px #333 solid;
+    box-shadow: 3px 3px 20px 0px #030303;
+    background-color: #131313;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    position: absolute;
+    z-index: 100;
+    @include amid($t: 0, $l: 0, $b: 0, $r: 0);
+    @include respond-to(ssm) {
+      height: 100vh;
+      overflow: auto;
+    }
+    .popup-text1 {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 288px;
+      height: 166px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../img/popup-text1.png);
+      @include respond-to(ssm) {
+        max-width: 150px;
+        height: 100px;
+      }
+    }
+    .close {
+      top: 0;
+      right: 0;
+      position: absolute;
+      background-image: url(../img/close.jpg);
+      width: 64px;
+      height: 64px;
+      cursor: pointer;
+      @include respond-to(ssm) {
+        background-size: contain;
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .login-box {
+      width: 100%;
+      padding-top: 57%;
+    }
+    &.banner {
+      background-image: url(../img/popup-banner.jpg);
+      width: 98%;
+      max-width: 900px;
+      height: 90vh;
+      max-height: 760px;
+      @include respond-to(ssm) {
+        height: 80vh;
+        width: 90%;
+        max-height: 450px;
+      }
+      @include respond-to(sm) {
+        max-height: 420px;
+      }
+    }
+    &.register {
+      padding: 30px;
+      background-image: url(../img/popup-bg.jpg);
+      width: 98%;
+      max-width: 600px;
+      height: 90vh;
+      max-height: 600px;
+      @include respond-to(ssm) {
+        height: 80vh;
+        width: 80%;
+        max-height: 550px;
+      }
+    }
+    &.notice {
+      padding: 30px;
+      background-image: url(../img/popup-bg.jpg);
+      width: 98%;
+      max-width: 500px;
+      height: 90vh;
+      max-height: 350px;
+      font-size: 18px;
+      color: #fff;
+      @include respond-to(ssm) {
+        height: 80vh;
+        width: 80%;
+        max-height:350px;
+      }
+      .more {
+        margin: 0 auto;
+        text-align: center;
+        .popup-text2 {
+          margin: 0 auto;
+          width: 100%;
+          max-width: 174px;
+          height: 40px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(../img/popup-text2.png);
+          @include respond-to(ssm) {
+            max-width: 150px;
+            height: 40px;
+          }
+        }
+        .popup-icon {
+          margin: 0 auto;
+          margin-top: 20px;
+          background-image: url(../img/popup-icon.png);
+          width: 122px;
+          height: 89px;
+        }
+        .text-p {
+          padding: 20px;
+          height: 100px;
+        }
+      }
+    }
+  }
+}

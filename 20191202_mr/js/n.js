@@ -1,0 +1,9 @@
+$(document).ready(function(){
+    $(".close,.ppb").click(function(){
+        $(".popup-bg").hide();
+    });
+    $("#btn-3").click(function(){
+        $(".popup-bg").hide();
+        $("#register").show();
+    });
+});

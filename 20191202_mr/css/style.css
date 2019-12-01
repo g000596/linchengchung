@@ -1,0 +1,1004 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+@font-face {
+  font-family: 'Noto Sans TC500';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.woff2) format("woff2"), url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.woff) format("woff"), url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Noto Sans TC700';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.woff2) format("woff2"), url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.woff) format("woff"), url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.otf) format("opentype");
+}
+
+.footer {
+  z-index: 3;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  background-image: url(../img/footer-l.png);
+  width: 98%;
+  height: 80px;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .footer {
+    background-image: url(../img/footer-m.png);
+    background-size: 120%;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding-top: 45%;
+  }
+}
+
+@font-face {
+  font-family: 'Noto Sans TC500';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.woff2) format("woff2"), url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.woff) format("woff"), url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Noto Sans TC700';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.woff2) format("woff2"), url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.woff) format("woff"), url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.otf) format("opentype");
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v4.0 | 20180602
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.main-agileinfo .agileits-top {
+  padding: 0.4rem 0.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+}
+
+.main-agileinfo .agileits-top .h2-text {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/login-text.png);
+  width: 100%;
+  max-width: 2.5rem;
+  height: 0.4rem;
+  padding-bottom: 0.1rem;
+}
+
+@media screen and (max-width: 767.98px) {
+  .main-agileinfo .agileits-top .h2-text {
+    max-width: 5rem;
+    height: 0.3rem;
+    margin-bottom: 0.2rem;
+  }
+}
+
+input[type="number"],
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  margin: 0 auto;
+  font-size: 18px;
+  color: #333;
+  font-weight: 100;
+  width: 95%;
+  max-width: 255px;
+  display: block;
+  border: none;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: solid 1px rgba(255, 255, 255, 0.37);
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(96%, rgba(255, 255, 255, 0)), color-stop(4%, #ffbf00));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, #ffbf00 4%);
+  background-position: -800px 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.text:focus,
+.text:valid {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  background-position: 0 0;
+}
+
+.text:focus::-webkit-input-placeholder,
+.text:valid::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9em;
+  -webkit-transform: translateY(-30px);
+  transform: translateY(-30px);
+  visibility: visible !important;
+}
+
+::-webkit-input-placeholder {
+  color: #333;
+  font-weight: 100;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #333;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #333;
+}
+
+:-ms-input-placeholder {
+  color: #333;
+}
+
+input[type="submit"] {
+  font-size: 0.9em;
+  color: #fff;
+  background: #76b852;
+  outline: none;
+  border: 1px solid #76b852;
+  cursor: pointer;
+  padding: 0.9em;
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 2em 0;
+  letter-spacing: 4px;
+}
+
+input[type="submit"]:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  background: #8dc26f;
+}
+
+.wthree-text {
+  font-size: 0.16rem;
+  top: -0.15rem;
+  position: relative;
+}
+
+@media screen and (max-width: 767.98px) {
+  .wthree-text span {
+    font-size: 0.35rem;
+    top: -0.15rem;
+    position: relative;
+  }
+}
+
+/*-- checkbox --*/
+.wthree-text label {
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.anim sapn {
+  font-size: 0.5rem;
+}
+
+input.checkbox {
+  background: #250d15;
+  cursor: pointer;
+  width: 0.2rem;
+  height: 0.2rem;
+}
+
+@media screen and (max-width: 767.98px) {
+  input.checkbox {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+}
+
+input.checkbox:before {
+  content: "";
+  position: absolute;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: inherit;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767.98px) {
+  input.checkbox:before {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+}
+
+input.checkbox:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 2px;
+  z-index: 1;
+  width: 0.2rem;
+  height: 0.2rem;
+  border: 1px solid #fff;
+  -webkit-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+@media screen and (max-width: 767.98px) {
+  input.checkbox:after {
+    width: 0.6rem;
+    height: 0.5rem;
+    top: -0.3rem;
+  }
+}
+
+input.checkbox:checked:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  height: 0.1rem;
+  border-color: #fff;
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+
+@media screen and (max-width: 767.98px) {
+  input.checkbox:checked:after {
+    height: 0.1rem;
+  }
+}
+
+.anim input.checkbox:checked:after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  height: 0.1rem;
+  border-color: transparent;
+  border-right-color: transparent;
+  -webkit-animation: 0.4s rippling 0.4s ease;
+          animation: 0.4s rippling 0.4s ease;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 767.98px) {
+  .anim input.checkbox:checked:after {
+    height: 0.2rem;
+  }
+}
+
+@-webkit-keyframes rippling {
+  50% {
+    border-left-color: #fff;
+  }
+  100% {
+    border-bottom-color: #fff;
+    border-left-color: #fff;
+  }
+}
+
+@keyframes rippling {
+  50% {
+    border-left-color: #fff;
+  }
+  100% {
+    border-bottom-color: #fff;
+    border-left-color: #fff;
+  }
+}
+
+/*-- //checkbox --*/
+.btngo {
+  -webkit-transition: -webkit-filter 0.4s, -webkit-transform 0.3s;
+  transition: -webkit-filter 0.4s, -webkit-transform 0.3s;
+  transition: filter 0.4s, transform 0.3s;
+  transition: filter 0.4s, transform 0.3s, -webkit-filter 0.4s, -webkit-transform 0.3s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 50%;
+  height: 41px;
+  padding-top: 0.2rem;
+  margin: 0 auto;
+  border-style: none;
+  outline: none;
+}
+
+.btngo:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+@media screen and (max-width: 500px) {
+  .btngo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: contain;
+    width: 7rem;
+    height: 1.85rem;
+  }
+}
+
+.clear {
+  color: #ff4d4d;
+  font-weight: bold;
+}
+
+input-placeholder {
+  color: red;
+}
+
+@font-face {
+  font-family: 'Noto Sans TC500';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.woff2) format("woff2"), url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.woff) format("woff"), url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Noto Sans TC700';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.woff2) format("woff2"), url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.woff) format("woff"), url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.otf) format("opentype");
+}
+
+.pc-qr {
+  background-repeat: no-repeat;
+  top: 40%;
+  right: 0;
+  z-index: 2;
+  position: fixed;
+  background-image: url(../img/qr.png);
+  width: 160px;
+  height: 420px;
+}
+
+@media screen and (max-width: 1200px) {
+  .pc-qr {
+    display: none;
+  }
+}
+
+.pc-qr button {
+  cursor: pointer;
+  position: absolute;
+  border-style: none;
+  outline: none;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/customer-btn.png);
+  background-position: center;
+  width: 160px;
+  height: 42px;
+}
+
+.pc-qr button:hover {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+.m-qr {
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  display: none;
+  padding-top: 10px;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.m-qr span {
+  padding: 10px 50px;
+  background: #484848;
+  border: 1px #fff solid;
+  font-size: 20px;
+}
+
+.m-qr div {
+  position: relative;
+  top: 20px;
+  margin: 0 auto;
+  background-image: url(../img/qr-2.jpg);
+  width: 133px;
+  height: 133px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .m-qr div {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .m-qr {
+    display: block;
+  }
+}
+
+@font-face {
+  font-family: 'Noto Sans TC500';
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.woff2) format("woff2"), url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.woff) format("woff"), url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Medium.otf) format("opentype");
+}
+
+@font-face {
+  font-family: 'Noto Sans TC700';
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.woff2) format("woff2"), url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.woff) format("woff"), url(https://cdngarenanow-a.akamaihd.net/games/lol/tw/web/media/upload/fonts/NotoSansTC-Bold.otf) format("opentype");
+}
+
+.popup-bg {
+  position: fixed;
+  z-index: 59;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-animation: showupbg 0.5s forwards linear;
+          animation: showupbg 0.5s forwards linear;
+}
+
+.popup-bg .ppb {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: showupbg 0.5s forwards linear;
+          animation: showupbg 0.5s forwards linear;
+}
+
+.popup-bg button {
+  cursor: pointer;
+  width: 135px;
+  height: 40px;
+  border-style: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  margin: 2px;
+}
+
+@media screen and (max-width: 500px) {
+  .popup-bg button {
+    width: 110px;
+    height: 40px;
+  }
+}
+
+.popup-bg button:hover {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+.popup-bg button.btn-3 {
+  background-image: url(../img/btn-3.png);
+}
+
+.popup-bg button.btn-4 {
+  background-image: url(../img/btn-4.png);
+}
+
+.popup-bg button.btn-5 {
+  background-image: url(../img/btn-5.png);
+}
+
+.popup-bg button.btn-6 {
+  background-image: url(../img/btn-6.png);
+}
+
+.popup-bg button.btn-7 {
+  background-image: url(../img/btn-7.png);
+}
+
+@-webkit-keyframes showupbg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showupbg {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.popup-bg .popup-more {
+  border: 1px #333 solid;
+  -webkit-box-shadow: 3px 3px 20px 0px #030303;
+          box-shadow: 3px 3px 20px 0px #030303;
+  background-color: #131313;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
+  position: absolute;
+  z-index: 100;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 767.98px) {
+  .popup-bg .popup-more {
+    height: 100vh;
+    overflow: auto;
+  }
+}
+
+.popup-bg .popup-more .popup-text1 {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 288px;
+  height: 166px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../img/popup-text1.png);
+}
+
+@media screen and (max-width: 767.98px) {
+  .popup-bg .popup-more .popup-text1 {
+    max-width: 150px;
+    height: 100px;
+  }
+}
+
+.popup-bg .popup-more .close {
+  top: 0;
+  right: 0;
+  position: absolute;
+  background-image: url(../img/close.jpg);
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767.98px) {
+  .popup-bg .popup-more .close {
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.popup-bg .popup-more .login-box {
+  width: 100%;
+  padding-top: 57%;
+}
+
+.popup-bg .popup-more.banner {
+  background-image: url(../img/popup-banner.jpg);
+  width: 98%;
+  max-width: 900px;
+  height: 90vh;
+  max-height: 760px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .popup-bg .popup-more.banner {
+    height: 80vh;
+    width: 90%;
+    max-height: 450px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .popup-bg .popup-more.banner {
+    max-height: 420px;
+  }
+}
+
+.popup-bg .popup-more.register {
+  padding: 30px;
+  background-image: url(../img/popup-bg.jpg);
+  width: 98%;
+  max-width: 600px;
+  height: 90vh;
+  max-height: 600px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .popup-bg .popup-more.register {
+    height: 80vh;
+    width: 80%;
+    max-height: 550px;
+  }
+}
+
+.popup-bg .popup-more.notice {
+  padding: 30px;
+  background-image: url(../img/popup-bg.jpg);
+  width: 98%;
+  max-width: 500px;
+  height: 90vh;
+  max-height: 350px;
+  font-size: 18px;
+  color: #fff;
+}
+
+@media screen and (max-width: 767.98px) {
+  .popup-bg .popup-more.notice {
+    height: 80vh;
+    width: 80%;
+    max-height: 350px;
+  }
+}
+
+.popup-bg .popup-more.notice .more {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.popup-bg .popup-more.notice .more .popup-text2 {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 174px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../img/popup-text2.png);
+}
+
+@media screen and (max-width: 767.98px) {
+  .popup-bg .popup-more.notice .more .popup-text2 {
+    max-width: 150px;
+    height: 40px;
+  }
+}
+
+.popup-bg .popup-more.notice .more .popup-icon {
+  margin: 0 auto;
+  margin-top: 20px;
+  background-image: url(../img/popup-icon.png);
+  width: 122px;
+  height: 89px;
+}
+
+.popup-bg .popup-more.notice .more .text-p {
+  padding: 20px;
+  height: 100px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  font: 16px "Noto Sans TC400", "Microsoft JhengHei", \5FAE\8F6F\96C5\9ED1, PMingLiU, \65B0\7D30\660E\9AD4;
+  background: #0b0b0b;
+}
+
+.center {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.bg0 {
+  overflow: hidden;
+  background-image: url(../img/bg0.jpg);
+  width: 100%;
+  height: 900px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg0 {
+    background-image: url(../img/bg0-m.jpg);
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    background-position: center top;
+    background-size: 100%;
+  }
+}
+
+.bg0 .logo {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/logo.png);
+  position: relative;
+  width: 262px;
+  height: 88px;
+  top: 25px;
+  left: 25px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg0 .logo {
+    max-width: 200px;
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.bg0 .text {
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 48%;
+  background-image: url(../img/h1-text.png);
+  width: 100%;
+  max-width: 1000px;
+  height: 139px;
+  position: relative;
+  -webkit-animation: forwards, textt 0.5s infinite linear alternate;
+          animation: forwards, textt 0.5s infinite linear alternate;
+}
+
+@-webkit-keyframes textt {
+  0% {
+    -webkit-filter: brightness(0.9);
+            filter: brightness(0.9);
+  }
+  100% {
+    -webkit-filter: brightness(1.1);
+            filter: brightness(1.1);
+  }
+}
+
+@keyframes textt {
+  0% {
+    -webkit-filter: brightness(0.9);
+            filter: brightness(0.9);
+  }
+  100% {
+    -webkit-filter: brightness(1.1);
+            filter: brightness(1.1);
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg0 .text {
+    margin-top: 60%;
+    background-size: 100%;
+    height: auto;
+    padding-top: 13%;
+  }
+}
+
+.bg0 h3 {
+  position: relative;
+  font-size: 36px;
+  font-family: "Noto Sans TC500";
+  text-align: center;
+  letter-spacing: 10px;
+  color: #ebebeb;
+  text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg0 h3 {
+    letter-spacing: 4px;
+    font-size: 21px;
+  }
+}
+
+.bg0 .btn-box {
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg0 .btn-box {
+    margin-top: 0px;
+  }
+}
+
+.bg0 .btn-box button {
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px;
+  border-style: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  max-width: 250px;
+  height: 80px;
+}
+
+.bg0 .btn-box button:hover {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg0 .btn-box button {
+    width: 46%;
+    background-size: contain;
+    margin: 0 auto;
+    margin: 1%;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bg0 .btn-box button {
+    height: 70px;
+  }
+}
+
+.bg0 .btn-box button.btn1 {
+  background-image: url(../img/btn-1.png);
+}
+
+.bg0 .btn-box button.btn2 {
+  background-image: url(../img/btn-2.png);
+}
+
+.bg1 {
+  background-color: #0b0b0b;
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg1 {
+    padding: 0;
+  }
+}
+
+.bg1 .swiper-container {
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 900px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg1 .swiper-container {
+    width: 94%;
+  }
+}
+
+.bg1 .swiper-container .swiper-wrapper .swiper-slide {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center top;
+  height: 500px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg1 .swiper-container .swiper-wrapper .swiper-slide {
+    height: auto;
+    padding-top: 120%;
+  }
+}
+
+.bg1 .swiper-container .swiper-wrapper .swiper-slide.n1 {
+  background-image: url(../img/banner-1.jpg);
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg1 .swiper-container .swiper-wrapper .swiper-slide.n1 {
+    background-image: url(../img/banner-1-m.jpg);
+  }
+}
+
+.bg1 .swiper-container .swiper-wrapper .swiper-slide.n2 {
+  background-image: url(../img/banner-2.jpg);
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg1 .swiper-container .swiper-wrapper .swiper-slide.n2 {
+    background-image: url(../img/banner-2-m.jpg);
+  }
+}
+
+.bg1 .swiper-container .swiper-wrapper .swiper-slide.n3 {
+  background-image: url(../img/banner-3.jpg);
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg1 .swiper-container .swiper-wrapper .swiper-slide.n3 {
+    background-image: url(../img/banner-3-m.jpg);
+  }
+}
+
+.bg1 .swiper-container .swiper-wrapper .swiper-slide.n4 {
+  background-image: url(../img/banner-4.jpg);
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg1 .swiper-container .swiper-wrapper .swiper-slide.n4 {
+    background-image: url(../img/banner-4-m.jpg);
+  }
+}

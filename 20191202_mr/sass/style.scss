@@ -1,0 +1,271 @@
+@import "footer";
+@import "mixins";
+@import "reset";
+@import "animation";
+@import "login";
+@import "qr";
+@import "popup";
+$color1: #210325;
+$color2: #48354c;
+$color3: #ae3bbc;
+$color4: #45bf48;
+$color5: #b48fd0;
+
+html,
+body {
+  // @media all and (orientation: landscape) {
+  //   -webkit-transform: rotateZ(0deg);transform: rotateZ(0deg);
+
+  // }
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  font: 16px $fontyh;
+  background: #0b0b0b;
+}
+
+.center {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.bg0 {
+  overflow: hidden;
+  background-image: url(../img/bg0.jpg);
+  width: 100%;
+  // width: 1920px;
+  height: 900px;
+  // height: 100%;
+
+  @include bgrem($size: cover);
+  position: relative;
+  // animation: forwards, tab 1s infinite linear alternate;
+  // @keyframes tab {
+  //   0% {
+  //     background-image: url(../img/bg0-a.jpg);
+  //   }
+
+  //   100% {
+  //     background-image: url(../img/bg0.jpg);
+  //   }
+  // }
+  // @include respond-to(lg) {
+  //   min-height: auto;
+  // }
+  @include respond-to(ssm) {
+    // animation: tabb;
+    background-image: url(../img/bg0-m.jpg);
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    // height: auto;
+    background-position: center top;
+    background-size: 100%;
+    // padding-top: 100%;
+  }
+
+  .logo {
+    @include bgrem($size: contain);
+    background-image: url(../img/logo.png);
+
+    position: relative;
+    width: 262px;
+    height: 88px;
+    top: 25px;
+    left: 25px;
+    @include respond-to(ssm) {
+      max-width: 200px;
+      top: 10px;
+      left: 10px;
+    }
+  }
+  .text {
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    margin-top: 48%;
+    background-image: url(../img/h1-text.png);
+    width: 100%;
+    max-width: 1000px;
+    height: 139px;
+    position: relative;
+    animation: forwards, textt 0.5s infinite linear alternate;
+
+    @keyframes textt {
+      0% {
+        filter: brightness(0.9);
+      }
+
+      100% {
+        filter: brightness(1.1);
+      }
+    }
+
+    @include respond-to(ssm) {
+      margin-top: 60%;
+      background-size: 100%;
+      height: auto;
+      padding-top: 13%;
+    }
+  }
+  h3 {
+    position: relative;
+    font-size: 36px;
+    font-family: "Noto Sans TC500";
+    text-align: center;
+    letter-spacing: 10px;
+    // top: 300px;
+    color: #ebebeb;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    @include respond-to(ssm) {
+      letter-spacing: 4px;
+      font-size: 21px;
+    }
+  }
+  .btn-box {
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+    @include respond-to(ssm) {
+      margin-top: 0px;
+    }
+    button {
+      cursor: pointer;
+      box-sizing: border-box;
+      margin: 10px;
+      border-style: none;
+      outline: none;
+      background: rgba(255, 255, 255, 0);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 100%;
+      max-width: 250px;
+      height: 80px;
+      &:hover {
+        transition: 0.8s;
+        filter: brightness(1.2);
+      }
+      @include respond-to(ssm) {
+        width: 46%;
+
+        background-size: contain;
+        margin: 0 auto;
+        margin: 1%;
+        background-position: center;
+      }
+      @include respond-to(sm) {
+        height: 70px;
+      }
+      &.btn1 {
+        background-image: url(../img/btn-1.png);
+      }
+      &.btn2 {
+        background-image: url(../img/btn-2.png);
+      }
+    }
+  }
+
+  // .girl {
+  //   @include bgrem($size: contain);
+  //   background-image: url(../img/girl.png);
+  //   width: 8.33rem;
+  //   height: 11.44rem;
+  //   position: absolute;
+  //   padding-left: 7.2rem;
+  //   top: 0;
+  //   animation: forwards, gg 3s infinite linear alternate;
+
+  //   @keyframes gg {
+  //     0% {
+  //       transform: scale(1) translateX(-10px);
+  //     }
+
+  //     50% {
+  //       transform: translateY(-10px);
+  //     }
+
+  //     100% {
+  //       transform: scale(1) translateX(0px);
+  //     }
+  //   }
+
+  //   @include respond-to(ssm) {
+  //     display: none;
+  //   }
+  // }
+}
+
+.bg1 {
+  background-color: #0b0b0b;
+  width: 100%;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  position: relative;
+  background-repeat: no-repeat;
+  // background-position: center top;
+
+  // @include respond-to(lg) {
+  //   min-height: auto;
+  // }
+
+  // @include respond-to(ssm) {
+  //   background-image: none;
+  //   background-color: #7e0f24;
+  //   height: auto;
+  // }
+  @include respond-to(ssm) {
+    padding: 0;
+  }
+  // 輪播
+  .swiper-container {
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 900px;
+    // height: 500px;
+    @include respond-to(ssm) {
+      width: 94%;
+      // height: 500px;
+    }
+    .swiper-wrapper {
+      .swiper-slide {
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center top;
+        height: 500px;
+        @include respond-to(ssm) {
+          height: auto;
+          padding-top: 120%;
+        }
+
+        &.n1 {
+          background-image: url(../img/banner-1.jpg);
+          @include respond-to(ssm) {
+            background-image: url(../img/banner-1-m.jpg);
+          }
+        }
+        &.n2 {
+          background-image: url(../img/banner-2.jpg);
+          @include respond-to(ssm) {
+            background-image: url(../img/banner-2-m.jpg);
+          }
+        }
+        &.n3 {
+          background-image: url(../img/banner-3.jpg);
+          @include respond-to(ssm) {
+            background-image: url(../img/banner-3-m.jpg);
+          }
+        }
+        &.n4 {
+          background-image: url(../img/banner-4.jpg);
+          @include respond-to(ssm) {
+            background-image: url(../img/banner-4-m.jpg);
+          }
+        }
+      }
+    }
+  }
+}
