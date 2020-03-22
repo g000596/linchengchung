@@ -37,8 +37,43 @@ h2 {
       }
     }
   }
+  &.style2 {
+      span{
+          margin-left: 10px;
+      }
+    display: flex;
+    align-items: center;
+    &::before {
+        position: relative;
+        width: 165px;
+        height: 6px;
+      width: 165px;
+      height: 6px;
+      content: " ";
+      margin-right: 15px;
+      background-repeat: no-repeat;
+      background-image: url(../img/line-1.png);
+    }
+    &::after {
+      position: absolute;
+      width: 165px;
+      height: 6px;
+      content: " ";
+      margin-left: 360px;
+      background-repeat: no-repeat;
+      background-image: url(../img/line-1.png);
+      @include respond-to(md) {
+        width: 100px;
+        margin-left: 130px;
+      }
+    }
+  }
 }
-
+h3{
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #baac97; 
+}
 p,
 ol > li {
   font-weight: 300;

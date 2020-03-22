@@ -36,7 +36,6 @@ html {
   margin: 0 auto 0;
   max-width: 1000px;
   position: relative;
-
 }
 //// // // // // // //  首頁
 
@@ -138,28 +137,17 @@ html {
   height: 100%;
   width: 100%;
   min-width: 1000px;
-  height: 1000px;
+  height: 500px;
   overflow: hidden;
   position: relative;
   // background-attachment: fixed;
   padding-top: 340px;
   @include respond-to(md) {
-    
+    height: auto;
     padding-top: 33%;
     min-width: auto;
-    
   }
-  .lux {
-    margin: auto;
-    position: absolute;
-    background-image: url(../img/lux-1.png);
-    width: 871px;
-    height: 1203px;
-    @include amid($t: 530px, $l: -1060px, $b: 0, $r: 0);
-    @include respond-to(md) {
-      display: none;
-    }
-  }
+
   .more {
     right: 0;
     width: 650px;
@@ -170,7 +158,6 @@ html {
     // align-items: center;
     // justify-content: right;
     @include respond-to(md) {
-   
       width: 100%;
       padding-right: 4%;
       padding-left: 4%;
@@ -183,6 +170,19 @@ html {
         padding-bottom: 10%;
       }
     }
+  }
+}
+.lux {
+  margin: auto;
+  position: absolute;
+  background-image: url(../img/lux-1.png);
+  width: 871px;
+  z-index: 2;
+  height: 1203px;
+  display: inline-block;
+  @include amid($t: 2900px, $l: -1060px, $b: 0, $r: 0);
+  @include respond-to(md) {
+    display: none;
   }
 }
 .youtube {
@@ -225,8 +225,8 @@ html {
 }
 
 // // // // // // // // // // 賽程
-.bg3{
-  background-image: url(../img/bg1.jpg);
+.bg3 {
+  background-image: url(../img/bg2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -236,4 +236,93 @@ html {
   height: 1000px;
   overflow: hidden;
   position: relative;
+  @include respond-to(md) {
+    height: auto;
+    // padding-top: 33%;
+    min-width: auto;
+  }
+  .date {
+    position: relative;
+    z-index: 3;
+    width: 600px;
+    padding-top: 100px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    h2 {
+      padding-left: 28px;
+      padding-bottom: 60px;
+      width: 100%;
+    }
+    .box {
+      background-repeat: no-repeat;
+      background-image: url(../img/date-bg.png);
+      width: 592px;
+      height: 153px;
+      padding-bottom: 30px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      .text {
+        h3 {
+          text-align: center;
+          position: absolute;
+          margin: 0;
+          left: 0;
+          top: -14px;
+          right: 0;
+        }
+      }
+      .player {
+        padding: 17px 36px 20px 36px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        .img {
+          width: 87px;
+          height: 94px;
+          cursor: pointer;
+          &.j1 {
+            background-image: url(../img/j-icon-1.png);
+          }
+          &.j2 {
+            background-image: url(../img/j-icon-2.png);
+          }
+          &.j3 {
+            background-image: url(../img/j-icon-3.png);
+          }
+          &.j4 {
+            background-image: url(../img/j-icon-4.png);
+          }
+          &.y1 {
+            background-image: url(../img/y-icon-1.png);
+          }
+          &.y2 {
+            background-image: url(../img/y-icon-2.png);
+          }
+          &.y3 {
+            background-image: url(../img/y-icon-3.png);
+          }
+          &.y4 {
+            background-image: url(../img/y-icon-4.png);
+          }
+          &:hover {
+            &::after {
+              content: " ";
+              width: 87px;
+              height: 94px;
+              z-index: 2;
+              position: absolute;
+              background-image: url(../img/twitch.png);
+            }
+          }
+        }
+        .name {
+          color: #baac97;
+          font-size: 1.6rem;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
 }
