@@ -22,6 +22,9 @@ html {
   //   opacity: 0;
   // }
 }
+.m-off{
+  overflow-y: hidden;
+}
 .menu {
   @include respond-to(md) {
     display: none;

@@ -67,7 +67,7 @@
   &.open {
     height: calc(100vh - 0px);
   }
-  position: absolute;
+  position: fixed;
   background: #241f26;
   width: 100%;
   height: 0vh;
