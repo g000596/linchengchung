@@ -418,6 +418,12 @@ h2.style2::before {
   background-image: url(../img/line-1.png);
 }
 
+@media screen and (max-width: 1000px) {
+  h2.style2::before {
+    width: 50px;
+  }
+}
+
 h2.style2::after {
   position: absolute;
   width: 165px;
@@ -430,8 +436,9 @@ h2.style2::after {
 
 @media screen and (max-width: 1000px) {
   h2.style2::after {
-    width: 100px;
-    margin-left: 130px;
+    width: 50px;
+    margin-left: 230px;
+    background-position: right;
   }
 }
 
@@ -768,16 +775,31 @@ html {
 }
 
 .bg3 .date {
-  position: relative;
+  position: absolute;
   z-index: 3;
   width: 600px;
   padding-top: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  .bg3 .date {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 .bg3 .date h2 {
   padding-left: 28px;
   padding-bottom: 60px;
   width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .bg3 .date h2 {
+    width: 300px;
+    margin: auto;
+  }
 }
 
 .bg3 .date .box {
@@ -795,6 +817,26 @@ html {
           align-items: center;
 }
 
+@media screen and (max-width: 1000px) {
+  .bg3 .date .box {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg3 .date .box {
+    width: 100%;
+    max-width: 592px;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 8%;
+    background-size: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 3%;
+  }
+}
+
 .bg3 .date .box .text h3 {
   text-align: center;
   position: absolute;
@@ -802,6 +844,13 @@ html {
   left: 0;
   top: -14px;
   right: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .bg3 .date .box .text h3 {
+    font-size: 1.2rem;
+    top: -10px;
+  }
 }
 
 .bg3 .date .box .player {
@@ -815,10 +864,36 @@ html {
           align-items: center;
 }
 
+@media screen and (max-width: 767.98px) {
+  .bg3 .date .box .player {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0% 7%;
+    width: 100%;
+  }
+}
+
 .bg3 .date .box .player .img {
+  background-repeat: no-repeat;
   width: 87px;
   height: 94px;
   cursor: pointer;
+  background-position: center;
+  background-size: contain;
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg3 .date .box .player .img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bg3 .date .box .player .img {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .bg3 .date .box .player .img.j1 {
@@ -854,16 +929,99 @@ html {
 }
 
 .bg3 .date .box .player .img:hover::after {
+  background-repeat: no-repeat;
   content: " ";
   width: 87px;
   height: 94px;
   z-index: 2;
   position: absolute;
+  background-position: center;
+  background-size: contain;
   background-image: url(../img/twitch.png);
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg3 .date .box .player .img:hover::after {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bg3 .date .box .player .img:hover::after {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .bg3 .date .box .player .name {
   color: #baac97;
   font-size: 1.6rem;
   padding-left: 10px;
+}
+
+@media screen and (max-width: 500px) {
+  .bg3 .date .box .player .name {
+    font-size: 1rem;
+  }
+}
+
+.bg3 .date-more {
+  position: absolute;
+  right: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .bg3 .date-more {
+    display: none;
+  }
+}
+
+.bg3 .date-more .live-box {
+  position: relative;
+  width: 900px;
+  height: 1000px;
+  background: #000;
+}
+
+.bg3 .date-more .live-box .t {
+  background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  position: absolute;
+  background-image: url(../img/date-bg2.png);
+  width: 393px;
+  height: 70px;
+  right: 0;
+}
+
+.bg3 .date-more .live-box .t p {
+  font-weight: 400;
+  color: #faf9f8;
+}
+
+.bg3 .date-more .live-box .poro {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 802px;
+  height: 799px;
+}
+
+.bg3 .date-more .live-box .poro.j1 {
+  background: url(../img/j-elves-1.png);
+}
+
+.bg3 .date-more .live-box .live {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  width: 495px;
+  height: 966px;
+  background-repeat: no-repeat;
+}
+
+.bg3 .date-more .live-box .live.j1 {
+  background-image: url(../img/j-live-1.png);
 }

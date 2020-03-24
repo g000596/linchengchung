@@ -22,7 +22,7 @@ html {
   //   opacity: 0;
   // }
 }
-.m-off{
+.m-off {
   overflow-y: hidden;
 }
 .menu {
@@ -245,18 +245,32 @@ html {
     min-width: auto;
   }
   .date {
-    position: relative;
+    position: absolute;
     z-index: 3;
     width: 600px;
     padding-top: 100px;
     // display: flex;
     // align-items: center;
     // justify-content: center;
+    @include respond-to(md) {
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+    }
     h2 {
       padding-left: 28px;
       padding-bottom: 60px;
       width: 100%;
+      @include respond-to(md) {
+        width: 300px;
+        margin: auto;
+      }
     }
+    // .date-all{
+    //   @include respond-to(ssm) {
+
+    //   }
+    // }
     .box {
       background-repeat: no-repeat;
       background-image: url(../img/date-bg.png);
@@ -266,6 +280,19 @@ html {
       position: relative;
       display: flex;
       align-items: center;
+      @include respond-to(md) {
+        margin: 0 auto;
+      }
+      @include respond-to(ssm) {
+        width: 100%;
+        max-width: 592px;
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 8%;
+        background-size: 100%;
+        box-sizing: border-box;
+        margin-bottom: 3%;
+      }
       .text {
         h3 {
           text-align: center;
@@ -274,6 +301,10 @@ html {
           left: 0;
           top: -14px;
           right: 0;
+          @include respond-to(sm) {
+            font-size: 1.2rem;
+            top: -10px;
+          }
         }
       }
       .player {
@@ -281,10 +312,27 @@ html {
         width: 50%;
         display: flex;
         align-items: center;
+        @include respond-to(ssm) {
+          box-sizing: border-box;
+          padding: 0% 7%;
+          width: 100%;
+        }
+
         .img {
+          background-repeat: no-repeat;
           width: 87px;
           height: 94px;
           cursor: pointer;
+          background-position: center;
+          background-size: contain;
+          @include respond-to(ssm) {
+            width: 80px;
+            height: 80px;
+          }
+          @include respond-to(sm) {
+            width: 50px;
+            height: 50px;
+          }
           &.j1 {
             background-image: url(../img/j-icon-1.png);
           }
@@ -311,12 +359,23 @@ html {
           }
           &:hover {
             &::after {
+              background-repeat: no-repeat;
               content: " ";
               width: 87px;
               height: 94px;
               z-index: 2;
               position: absolute;
+              background-position: center;
+              background-size: contain;
               background-image: url(../img/twitch.png);
+              @include respond-to(ssm) {
+                width: 80px;
+                height: 80px;
+              }
+              @include respond-to(sm) {
+                width: 50px;
+                height: 50px;
+              }
             }
           }
         }
@@ -324,6 +383,60 @@ html {
           color: #baac97;
           font-size: 1.6rem;
           padding-left: 10px;
+          @include respond-to(sm) {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  // 介紹
+  .date-more {
+    //  top: 500px;
+    position: absolute;
+    right: 0;
+    @include respond-to(md) {
+      display: none;
+    }
+    .live-box {
+      position: relative;
+      width: 900px;
+      height: 1000px;
+      background: #000;
+      .t {
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        padding: 10px;
+        position: absolute;
+        background-image: url(../img/date-bg2.png);
+        width: 393px;
+        height: 70px;
+        right: 0;
+        p {
+          font-weight: 400;
+          color: #faf9f8;
+        }
+      }
+      .poro {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 802px;
+        height: 799px;
+        // background: #000;
+        &.j1 {
+          background: url(../img/j-elves-1.png);
+        }
+      }
+      .live {
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        width: 495px;
+        height: 966px;
+        background-repeat: no-repeat;
+        &.j1 {
+          background-image: url(../img/j-live-1.png);
         }
       }
     }

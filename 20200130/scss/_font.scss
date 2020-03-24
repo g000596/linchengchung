@@ -53,6 +53,10 @@ h2 {
       margin-right: 15px;
       background-repeat: no-repeat;
       background-image: url(../img/line-1.png);
+      @include respond-to(md) {
+        width: 50px;
+        // margin-left: 130px;
+      }
     }
     &::after {
       position: absolute;
@@ -63,8 +67,9 @@ h2 {
       background-repeat: no-repeat;
       background-image: url(../img/line-1.png);
       @include respond-to(md) {
-        width: 100px;
-        margin-left: 130px;
+        width: 50px;
+        margin-left: 230px;
+        background-position: right;
       }
     }
   }
