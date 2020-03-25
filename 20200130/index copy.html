@@ -2,8 +2,8 @@
 <html lang="zh-TW">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- meta -->
   <title>《符文大地傳說》實況明星賽</title>
   <link rel="shortcut icon" type="image/x-icon"
@@ -34,11 +34,11 @@
       <a href="https://sea.playruneterra.com/zh-tw" target="_blank">
         <li class="logo"></li>
       </a>
-      <li>首頁</li>
-      <li>活動簡介</li>
-      <li>參賽實況主及賽程 </li>
-      <li>預測拿好禮</li>
-      <li>我要預測</li>
+      <li class="gotop">首頁</li>
+      <li class="btn-a1">活動簡介</li>
+      <li class="btn-a2">參賽實況主及賽程 </li>
+      <li class="btn-a3">預測拿好禮</li>
+      <li class="btn-a4">我要預測</li>
     </ul>
 
   </div>
@@ -56,12 +56,29 @@
   </div>
   <div class="nav-open">
     <ul>
-      <li>首頁</li>
-      <li>活動簡介</li>
-      <li>參賽實況主及賽程 </li>
-      <li>預測拿好禮</li>
-      <li>我要預測</li>
+      <li class="gotop tr">首頁</li>
+      <li class="btn-a1 tr">活動簡介</li>
+      <li class="btn-a2 tr">參賽實況主及賽程 </li>
+      <li class="btn-a3 tr">預測拿好禮</li>
+      <li class="btn-a4 tr">我要預測</li>
     </ul>
+  </div>
+  <!--  -->
+  <!-- 串接// popup  唯獨 領取普羅 多一個按鈕 -->
+  <div class="popup" style="display: none;">
+    <div class="popup-bg">
+      <div class="box">
+        <div class="more">
+          <p>恭喜完成投票，<br>請點選下方按鈕前往預登領取普羅</p>
+        </div>
+        <div class="tt">
+          <div class="btn" id="close">確 認</div>
+          <a href="https://sea.playruneterra.com/zh-tw" target="_blank">
+            <div class="btn" id="closee">前往領取</div>
+          </a>
+        </div>
+      </div>
+    </div>
   </div>
   <!--  -->
   <div class="bg">
@@ -85,7 +102,7 @@
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <!-- more1 -->
-  <div class="bg1">
+  <div class="bg1" id="ap1">
 
     <div class="center">
       <div class="more">
@@ -108,7 +125,7 @@
     </div>
   </div>
   <!--  -->
-  <div id="bb" class="bg3">
+  <div id="ap2" class="bg3">
     <div class="center">
 
       <div class="date">
@@ -322,7 +339,7 @@
   </div>
   <!--  -->
   <!-- prize -->
-  <div class="bg4" id="prize">
+  <div class="bg4" id="ap3">
     <div class="center">
       <div class="prize-more">
         <div class="box-img">
@@ -382,7 +399,7 @@
   </div>
   <!-- 投票 -->
   <!--  -->
-  <div class="bg5">
+  <div class="bg5" id="ap4">
     <div class="center">
       <div class="more">
         <div class="text">
@@ -569,9 +586,9 @@
         </div>
       </div>
     </div>
-    <div class="f"> 
+    <div class="f">
       <a href="http://www.taiwanmobile.com/" target="_blank">
-       <div class="tm"></div>
+        <div class="tm"></div>
       </a>
     </div>
     <div class="sort"></div>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
   http://meyerweb.com/eric/tools/css/reset/ 
   v2.0 | 20110126
@@ -564,6 +565,9 @@ ol li {
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -580,6 +584,14 @@ ol li {
 
 .form-control::placeholder {
   color: #bbac97;
+}
+
+select {
+  /* 解决select下拉箭头在ios上不兼容的问题 */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../img/arrow.png) no-repeat scroll right 10px center transparent;
 }
 
 html {
@@ -616,7 +628,6 @@ html {
   overflow: hidden;
   min-width: 1000px;
   width: 100%;
-  height: 100%;
   height: 1000px;
   background-image: url(../img/bg2.jpg);
   background-position: top center;
@@ -626,12 +637,13 @@ html {
 
 @media screen and (max-width: 1000px) {
   .bg {
-    padding-top: 107%;
-    min-width: auto;
-    width: 100%;
-    height: 100%;
     background-image: url(../img/head-m.jpg);
+    min-width: auto;
+    max-width: 1000px;
+    width: 100%;
     background-size: 100%;
+    padding-top: 107%;
+    height: auto;
   }
 }
 

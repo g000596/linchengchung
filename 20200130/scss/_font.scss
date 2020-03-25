@@ -38,15 +38,15 @@ h2 {
     }
   }
   &.style2 {
-      span{
-          margin-left: 10px;
-      }
+    span {
+      margin-left: 10px;
+    }
     display: flex;
     align-items: center;
     &::before {
-        position: relative;
-        width: 165px;
-        height: 6px;
+      position: relative;
+      width: 165px;
+      height: 6px;
       width: 165px;
       height: 6px;
       content: " ";
@@ -74,10 +74,10 @@ h2 {
     }
   }
 }
-h3{
-    font-weight: 500;
-    font-size: 1.6rem;
-    color: #baac97; 
+h3 {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #baac97;
 }
 p,
 ol > li {
@@ -111,8 +111,21 @@ ol {
   font-family: "Microsoft JhengHei";
   line-height: 1.5;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
 
   &::placeholder {
     color: #bbac97;
   }
 }
+select{
+  /* 解决select下拉箭头在ios上不兼容的问题 */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../img/arrow.png) no-repeat scroll right 10px center transparent;
+ 
+  }
+  
