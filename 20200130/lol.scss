@@ -144,7 +144,7 @@ $bor: 1px solid $color1;
 }
 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 12px rgba(190, 175, 150, 0.2);
+box-shadow: inset 0 0 12px rgba(190, 175, 150, 0.2);
   border-radius: 3px;
 }
 

@@ -287,7 +287,7 @@ html {
         width: 100%;
         max-width: 592px;
         height: auto;
-        padding-top: 5%;
+        padding-top: 6.5%;
         padding-bottom: 8%;
         background-size: 100%;
         box-sizing: border-box;
@@ -402,30 +402,87 @@ html {
       position: relative;
       width: 900px;
       height: 1000px;
-      background: #000;
-      .t {
-        background-repeat: no-repeat;
-        box-sizing: border-box;
-        padding: 10px;
+      // background: #000;
+      .t-more {
         position: absolute;
-        background-image: url(../img/date-bg2.png);
-        width: 393px;
-        height: 70px;
         right: 0;
-        p {
-          font-weight: 400;
-          color: #faf9f8;
+        bottom: 120px;
+        box-sizing: border-box;
+        h3 {
+          text-align: center;
+          text-transform: uppercase;
+          color: white;
+          text-shadow: black 0.1em 0.1em 0.2em;
+          font-weight: 00;
+          font-size: 2rem;
+          line-height: 2rem;
+          &.jt {
+            color: #ffadca;
+          }
+          &.yt {
+            color: #7483f3;
+          }
+        }
+        h4 {
+          text-shadow: black 0.1em 0.1em 0.2em;
+          color: #fff;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: 900;
+          font-size: 3rem;
+          line-height: 3rem;
+          padding-bottom: 10px;
+        }
+        .t {
+          box-sizing: border-box;
+          background-repeat: no-repeat;
+          padding: 10px;
+          background-image: url(../img/date-bg2.png);
+          width: 393px;
+          height: 70px;
+
+          p {
+            font-weight: 400;
+            color: #faf9f8;
+          }
         }
       }
+
       .poro {
         position: absolute;
-        right: 0;
+        right: -500px;
         bottom: 0;
+        left: 0;
+        margin: auto;
         width: 802px;
         height: 799px;
         // background: #000;
+        &.p-off {
+          left: 200px;
+        }
         &.j1 {
           background: url(../img/j-elves-1.png);
+        }
+        &.j2 {
+          background: url(../img/j-elves-2.png);
+        }
+        &.j3 {
+          background: url(../img/j-elves-3.png);
+        }
+        &.j4 {
+          background: url(../img/j-elves-4.png);
+        }
+        &.y1 {
+          background: url(../img/y-elves-1.png);
+        }
+        &.y2 {
+          background: url(../img/y-elves-2.png);
+        }
+        &.y3 {
+          background: url(../img/y-elves-3.png);
+        }
+        &.y4 {
+          background: url(../img/y-elves-4.png);
         }
       }
       .live {
@@ -436,9 +493,229 @@ html {
         height: 966px;
         background-repeat: no-repeat;
         &.j1 {
+          background-position: center top 50px;
           background-image: url(../img/j-live-1.png);
         }
+        &.j2 {
+          background-position: center top 50px;
+          background-image: url(../img/j-live-2.png);
+        }
+        &.j3 {
+          background-image: url(../img/j-live-3.png);
+        }
+        &.j4 {
+          background-image: url(../img/j-live-4.png);
+        }
+        &.y1 {
+          background-image: url(../img/y-live-1.png);
+        }
+        &.y2 {
+          background-position: center top 50px;
+          background-image: url(../img/y-live-2.png);
+        }
+        &.y3 {
+          background-position: center top 50px;
+          background-image: url(../img/y-live-3.png);
+        }
+        &.y4 {
+          background-position: left 50px top 50px;
+          background-image: url(../img/y-live-4.png);
+        }
+        div {
+          right: -100px;
+          margin: auto;
+          position: absolute;
+          left: 0;
+          background-image: url(../img/line-r.png);
+          width: 559px;
+          height: 559px;
+        }
       }
+    }
+  }
+}
+// // // // // // // // 獎品
+.bg4 {
+  background-image: url(../img/bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  min-width: 1000px;
+  height: 1070px;
+  overflow: hidden;
+  position: relative;
+  @include respond-to(md) {
+    min-width: auto;
+    height: auto;
+  }
+  .prize-more {
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    .box-img {
+      width: 60%;
+      // display: inline-block;
+      float: left;
+      @include respond-to(md) {
+        width: 100%;
+
+        position: relative;
+        padding-bottom: 20px;
+      }
+      div {
+        background-image: url(../img/prize-1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 550px;
+        height: 424px;
+        @include respond-to(md) {
+          margin: 0 auto;
+          max-width: 550px;
+          height: auto;
+          width: 100%;
+          padding-top: 53%;
+          background-position: center;
+        }
+      }
+    }
+    .box-txt {
+      width: 40%;
+      display: inline-block;
+      @include respond-to(md) {
+        width: 100%;
+        // margin: 0 auto;
+        box-sizing: border-box;
+        padding: 4%;
+      }
+      div {
+        padding-bottom: 30px;
+      }
+    }
+  }
+  .prize-more2 {
+    position: relative;
+    .box-txt {
+      position: relative;
+      display: inline-block;
+      width: 60%;
+      float: left;
+      @include respond-to(md) {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 4%;
+      }
+      .prize-m1 {
+        width: 582px;
+        height: 228px;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        background-image: url(../img/date-bg3.png);
+        padding: 30px 20px;
+        margin-bottom: 20px;
+        @include respond-to(md) {
+          background-size: contain;
+          margin: 0 auto;
+          max-width: 582px;
+          height: auto;
+          width: 100%;
+          padding-top: 5%;
+          margin-bottom: 2%;
+          background-position: center;
+        }
+        @include respond-to(sm) {
+          padding-top: 8%;
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        h3 {
+          // font-size: ;
+          text-align: center;
+          color: #c49250;
+          padding-bottom: 20px;
+          @include respond-to(sm) {
+            padding-bottom: 5px;
+          }
+          @include respond-to(xs) {
+            font-size: 1.2rem;
+          }
+        }
+        p {
+          text-align: center;
+          line-height: 1.8rem;
+          @include respond-to(sm) {
+            line-height: 1.2rem;
+            // scroll-padding: -1px;
+          }
+          @include respond-to(xs) {
+            font-size: 0.8rem;
+          }
+        }
+      }
+      .prize-m2 {
+        right: 20px;
+        position: absolute;
+        width: 382px;
+        height: 150px;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        background-image: url(../img/date-bg4.png);
+        padding: 30px 20px;
+        @include respond-to(md) {
+          right: 0;
+          left: 0;
+          position: relative;
+          background-image: url(../img/date-bg3.png);
+          background-size: contain;
+          margin: 0 auto;
+          max-width: 582px;
+          height: auto;
+          width: 100%;
+          padding-top: 5%;
+          background-position: center;
+        }
+        h3 {
+          // font-size: ;
+          text-align: center;
+          color: #c49250;
+          padding-bottom: 20px;
+          @include respond-to(sm) {
+            padding-bottom: 5px;
+          }
+          @include respond-to(xs) {
+            font-size: 1.2rem;
+          }
+        }
+        p {
+          text-align: center;
+          line-height: 1.8rem;
+        }
+        @include respond-to(xs) {
+          font-size: 0.8rem;
+        }
+      }
+    }
+    .te {
+      display: inline-block;
+      width: 40%;
+      height: 545px;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url(../img/teemo.png);
+      @include respond-to(md) {
+    display: flex;
+    width: 40%;
+    padding-top: 40%;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+      }
+    }
+    .ps {
+      box-sizing: border-box;
+      padding: 4%;
     }
   }
 }

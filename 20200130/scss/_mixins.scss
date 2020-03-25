@@ -2,13 +2,14 @@ $lgw: 1200px;
 $mdw: 1000px;
 $sdw: 767.98px;
 $i4: 500px;
-$i3: 320px;
+$i3: 360px;
 $smw: $lgw + 20;
 $breakpoints: (
   "lg": "screen and (max-width: #{$lgw})",
   "md": "screen and (max-width: #{$mdw})",
   "ssm": "screen and (max-width: #{$sdw})",
-  "sm": "screen and (max-width: #{$i4})"
+  "sm": "screen and (max-width: #{$i4})",
+  "xs": "screen and (max-width: #{$i3})"
 );
 $baseFSoffset: 100;
 @mixin respond-to($name) {

@@ -828,7 +828,7 @@ html {
     width: 100%;
     max-width: 592px;
     height: auto;
-    padding-top: 5%;
+    padding-top: 6.5%;
     padding-bottom: 8%;
     background-size: 100%;
     -webkit-box-sizing: border-box;
@@ -981,36 +981,104 @@ html {
   position: relative;
   width: 900px;
   height: 1000px;
-  background: #000;
 }
 
-.bg3 .date-more .live-box .t {
-  background-repeat: no-repeat;
+.bg3 .date-more .live-box .t-more {
+  position: absolute;
+  right: 0;
+  bottom: 120px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.bg3 .date-more .live-box .t-more h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  font-weight: 00;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.bg3 .date-more .live-box .t-more h3.jt {
+  color: #ffadca;
+}
+
+.bg3 .date-more .live-box .t-more h3.yt {
+  color: #7483f3;
+}
+
+.bg3 .date-more .live-box .t-more h4 {
+  text-shadow: black 0.1em 0.1em 0.2em;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 3rem;
+  padding-bottom: 10px;
+}
+
+.bg3 .date-more .live-box .t-more .t {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-repeat: no-repeat;
   padding: 10px;
-  position: absolute;
   background-image: url(../img/date-bg2.png);
   width: 393px;
   height: 70px;
-  right: 0;
 }
 
-.bg3 .date-more .live-box .t p {
+.bg3 .date-more .live-box .t-more .t p {
   font-weight: 400;
   color: #faf9f8;
 }
 
 .bg3 .date-more .live-box .poro {
   position: absolute;
-  right: 0;
+  right: -500px;
   bottom: 0;
+  left: 0;
+  margin: auto;
   width: 802px;
   height: 799px;
 }
 
+.bg3 .date-more .live-box .poro.p-off {
+  left: 200px;
+}
+
 .bg3 .date-more .live-box .poro.j1 {
   background: url(../img/j-elves-1.png);
+}
+
+.bg3 .date-more .live-box .poro.j2 {
+  background: url(../img/j-elves-2.png);
+}
+
+.bg3 .date-more .live-box .poro.j3 {
+  background: url(../img/j-elves-3.png);
+}
+
+.bg3 .date-more .live-box .poro.j4 {
+  background: url(../img/j-elves-4.png);
+}
+
+.bg3 .date-more .live-box .poro.y1 {
+  background: url(../img/y-elves-1.png);
+}
+
+.bg3 .date-more .live-box .poro.y2 {
+  background: url(../img/y-elves-2.png);
+}
+
+.bg3 .date-more .live-box .poro.y3 {
+  background: url(../img/y-elves-3.png);
+}
+
+.bg3 .date-more .live-box .poro.y4 {
+  background: url(../img/y-elves-4.png);
 }
 
 .bg3 .date-more .live-box .live {
@@ -1023,5 +1091,291 @@ html {
 }
 
 .bg3 .date-more .live-box .live.j1 {
+  background-position: center top 50px;
   background-image: url(../img/j-live-1.png);
+}
+
+.bg3 .date-more .live-box .live.j2 {
+  background-position: center top 50px;
+  background-image: url(../img/j-live-2.png);
+}
+
+.bg3 .date-more .live-box .live.j3 {
+  background-image: url(../img/j-live-3.png);
+}
+
+.bg3 .date-more .live-box .live.j4 {
+  background-image: url(../img/j-live-4.png);
+}
+
+.bg3 .date-more .live-box .live.y1 {
+  background-image: url(../img/y-live-1.png);
+}
+
+.bg3 .date-more .live-box .live.y2 {
+  background-position: center top 50px;
+  background-image: url(../img/y-live-2.png);
+}
+
+.bg3 .date-more .live-box .live.y3 {
+  background-position: center top 50px;
+  background-image: url(../img/y-live-3.png);
+}
+
+.bg3 .date-more .live-box .live.y4 {
+  background-position: left 50px top 50px;
+  background-image: url(../img/y-live-4.png);
+}
+
+.bg3 .date-more .live-box .live div {
+  right: -100px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  background-image: url(../img/line-r.png);
+  width: 559px;
+  height: 559px;
+}
+
+.bg4 {
+  background-image: url(../img/bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  min-width: 1000px;
+  height: 1070px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  .bg4 {
+    min-width: auto;
+    height: auto;
+  }
+}
+
+.bg4 .prize-more .box-img {
+  width: 60%;
+  float: left;
+}
+
+@media screen and (max-width: 1000px) {
+  .bg4 .prize-more .box-img {
+    width: 100%;
+    position: relative;
+    padding-bottom: 20px;
+  }
+}
+
+.bg4 .prize-more .box-img div {
+  background-image: url(../img/prize-1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 550px;
+  height: 424px;
+}
+
+@media screen and (max-width: 1000px) {
+  .bg4 .prize-more .box-img div {
+    margin: 0 auto;
+    max-width: 550px;
+    height: auto;
+    width: 100%;
+    padding-top: 53%;
+    background-position: center;
+  }
+}
+
+.bg4 .prize-more .box-txt {
+  width: 40%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 1000px) {
+  .bg4 .prize-more .box-txt {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 4%;
+  }
+}
+
+.bg4 .prize-more .box-txt div {
+  padding-bottom: 30px;
+}
+
+.bg4 .prize-more2 {
+  position: relative;
+}
+
+.bg4 .prize-more2 .box-txt {
+  position: relative;
+  display: inline-block;
+  width: 60%;
+  float: left;
+}
+
+@media screen and (max-width: 1000px) {
+  .bg4 .prize-more2 .box-txt {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 4%;
+  }
+}
+
+.bg4 .prize-more2 .box-txt .prize-m1 {
+  width: 582px;
+  height: 228px;
+  background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(../img/date-bg3.png);
+  padding: 30px 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .bg4 .prize-more2 .box-txt .prize-m1 {
+    background-size: contain;
+    margin: 0 auto;
+    max-width: 582px;
+    height: auto;
+    width: 100%;
+    padding-top: 5%;
+    margin-bottom: 2%;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bg4 .prize-more2 .box-txt .prize-m1 {
+    padding-top: 8%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.bg4 .prize-more2 .box-txt .prize-m1 h3 {
+  text-align: center;
+  color: #c49250;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .bg4 .prize-more2 .box-txt .prize-m1 h3 {
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .bg4 .prize-more2 .box-txt .prize-m1 h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.bg4 .prize-more2 .box-txt .prize-m1 p {
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+@media screen and (max-width: 500px) {
+  .bg4 .prize-more2 .box-txt .prize-m1 p {
+    line-height: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .bg4 .prize-more2 .box-txt .prize-m1 p {
+    font-size: 0.8rem;
+  }
+}
+
+.bg4 .prize-more2 .box-txt .prize-m2 {
+  right: 20px;
+  position: absolute;
+  width: 382px;
+  height: 150px;
+  background-repeat: no-repeat;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(../img/date-bg4.png);
+  padding: 30px 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .bg4 .prize-more2 .box-txt .prize-m2 {
+    right: 0;
+    left: 0;
+    position: relative;
+    background-image: url(../img/date-bg3.png);
+    background-size: contain;
+    margin: 0 auto;
+    max-width: 582px;
+    height: auto;
+    width: 100%;
+    padding-top: 5%;
+    background-position: center;
+  }
+}
+
+.bg4 .prize-more2 .box-txt .prize-m2 h3 {
+  text-align: center;
+  color: #c49250;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .bg4 .prize-more2 .box-txt .prize-m2 h3 {
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .bg4 .prize-more2 .box-txt .prize-m2 h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.bg4 .prize-more2 .box-txt .prize-m2 p {
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+@media screen and (max-width: 360px) {
+  .bg4 .prize-more2 .box-txt .prize-m2 {
+    font-size: 0.8rem;
+  }
+}
+
+.bg4 .prize-more2 .te {
+  display: inline-block;
+  width: 40%;
+  height: 545px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../img/teemo.png);
+}
+
+@media screen and (max-width: 1000px) {
+  .bg4 .prize-more2 .te {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 40%;
+    padding-top: 40%;
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.bg4 .prize-more2 .ps {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 4%;
 }
