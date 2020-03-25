@@ -7,21 +7,27 @@
   background-color: #241f26;
   position: fixed;
   z-index: 5;
+  cursor: pointer;
+
   ul {
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: left;
+
     a {
       padding-right: 3%;
       border-right: 1px #2f2f2f solid;
       margin-right: 3%;
     }
+
     li {
       white-space: nowrap;
       width: auto;
       padding-right: 3%;
-
+      &:hover {
+        filter: brightness(1.2);
+      }
       &.logo {
         background-image: url(../img/lor-icon.png);
         background-repeat: no-repeat;
@@ -41,12 +47,15 @@
   background-color: #241f26;
   height: 60px;
   border-bottom: 1px #2f2f2f solid;
+
   div {
     display: flex;
     align-items: center;
     justify-content: left;
+
     a {
       height: 60px;
+
       .lor-i {
         position: absolute;
         margin: 0 15px;
@@ -64,9 +73,11 @@
 
 .nav-open {
   z-index: 4;
+
   &.open {
     height: calc(100vh - 0px);
   }
+
   position: fixed;
   background: #241f26;
   width: 100%;
@@ -74,8 +85,10 @@
   overflow-y: hidden;
   transform: (10deg);
   transition: 0.5s ease-in-out;
+
   ul {
     padding-top: 50px;
+
     li {
       text-align: left;
       color: #c6c0af;
@@ -83,12 +96,14 @@
       margin: 0 40px;
       padding: 20px 0;
       border-bottom: 1px #2f2f2f solid;
+
       &:nth-child(1) {
         border-top: 1px #2f2f2f solid;
       }
     }
   }
 }
+
 #nav-icon1 {
   width: 25px;
   height: 25px;

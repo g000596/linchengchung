@@ -34,11 +34,11 @@
       <a href="https://sea.playruneterra.com/zh-tw" target="_blank">
         <li class="logo"></li>
       </a>
-      <li>首頁</li>
-      <li>活動簡介</li>
-      <li>參賽實況主及賽程 </li>
-      <li>預測拿好禮</li>
-      <li>我要預測</li>
+      <li class="gotop">首頁</li>
+      <li class="btn-a1">活動簡介</li>
+      <li class="btn-a2">參賽實況主及賽程 </li>
+      <li class="btn-a3">預測拿好禮</li>
+      <li class="btn-a4">我要預測</li>
     </ul>
 
   </div>
@@ -56,15 +56,32 @@
   </div>
   <div class="nav-open">
     <ul>
-      <li>首頁</li>
-      <li>活動簡介</li>
-      <li>參賽實況主及賽程 </li>
-      <li>預測拿好禮</li>
-      <li>我要預測</li>
+      <li class="gotop tr">首頁</li>
+      <li class="btn-a1 tr">活動簡介</li>
+      <li class="btn-a2 tr">參賽實況主及賽程 </li>
+      <li class="btn-a3 tr">預測拿好禮</li>
+      <li class="btn-a4 tr">我要預測</li>
     </ul>
   </div>
   <!--  -->
-  <!-- <div class="bg">
+  <!-- 串接// popup  唯獨 領取普羅 多一個按鈕 -->
+  <div class="popup" style="display: none;">
+    <div class="popup-bg">
+      <div class="box">
+        <div class="more">
+          <p>恭喜完成投票，<br>請點選下方按鈕前往預登領取普羅</p>
+        </div>
+        <div class="tt">
+          <div class="btn" id="close">確 認</div>
+          <a href="https://sea.playruneterra.com/zh-tw" target="_blank">
+            <div class="btn" id="closee">前往領取</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+  <div class="bg">
     <div class="pc">
       <div class="aim bg0-8"></div>
       <div class="aim bg0-7"></div>
@@ -77,15 +94,15 @@
       <div class="aim title"></div>
       <div class="aim lor"></div>
     </div>
-  </div> -->
+  </div>
   <!--  -->
-  <!-- <div class="lux"></div> -->
-  <div class="youtube" style="display: none;">
+  <div class="lux"></div>
+  <div class="youtube" style="display: block;">
     <iframe src="https://www.youtube-nocookie.com/embed/8l48hkIxtfo?controls=0" frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
   <!-- more1 -->
-  <!-- <div class="bg1">
+  <div class="bg1" id="ap1">
 
     <div class="center">
       <div class="more">
@@ -106,12 +123,223 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
   <!--  -->
-  <!--  -->
+  <div id="ap2" class="bg3">
+    <div class="center">
+
+      <div class="date">
+
+        <h2 class="style2 n1 ff">賽程資訊<span>03</span></h2>
+
+        <!-- 4/20 -->
+
+        <div class="box">
+          <div class="text">
+            <h3>04/20(一) - 20:00 </h3>
+          </div>
+          <div class="player">
+            <a href="#" target="_blank">
+              <div id="navj1" class="img j1"></div>
+            </a>
+            <div class="name">Tsuki</div>
+          </div>
+          <div class="player">
+            <a href="#" target="_blank">
+              <div id="navy1" class="img y1"></div>
+            </a>
+            <div class="name">Shaxy</div>
+          </div>
+        </div>
+        <!-- 4/20 -->
+        <div class="box">
+          <div class="text">
+            <h3>04/20(一) - 21:30 </h3>
+          </div>
+          <div class="player">
+            <a href="#" target="_blank">
+              <div id="navj2" class="img j2"></div>
+            </a>
+            <div class="name">MisTake</div>
+          </div>
+          <div class="player">
+            <a href="#" target="_blank">
+              <div id="navy2" class="img y2"></div>
+            </a>
+            <div class="name">BeBe</div>
+          </div>
+        </div>
+        <!-- 4/23 -->
+        <div class="box">
+          <div class="text">
+            <h3>04/23(四) - 20:00 </h3>
+          </div>
+          <div class="player">
+            <a href="#" target="_blank">
+              <div id="navj3" class="img j3"></div>
+            </a>
+            <div class="name">Albis</div>
+          </div>
+          <div class="player">
+            <a href="#" target="_blank">
+              <div id="navy3" class="img y3"></div>
+            </a>
+            <div class="name">Backstairs</div>
+          </div>
+        </div>
+        <!-- 4/23 -->
+        <div class="box">
+          <div class="text">
+            <h3>04/23(四) - 21:30 </h3>
+          </div>
+          <div class="player">
+            <a href="#" target="_blank">
+              <div id="navj4" class="img j4"></div>
+            </a>
+            <div class="name">Tom60229</div>
+          </div>
+          <div class="player">
+            <a href="#" target="_blank">
+              <div id="navy4" class="img y4"></div>
+            </a>
+            <div class="name">Uzra</div>
+          </div>
+        </div>
+        <!-- end -->
+
+      </div>
+
+      <!-- live -->
+      <div class="date-more">
+
+        <div id="j1m" class="live-box">
+          <div class="live j1">
+            <div class=""></div>
+          </div>
+          <div class="poro j1"></div>
+          <div class="t-more">
+            <h3 class="jt">Team Jinx</h3>
+            <h4>Tsuki</h4>
+            <div class="t">
+              <p>多能力女實況主，主持、cosplay、玩遊戲樣樣行，反差萌月希正在狙擊你的心！ </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div id="j2m" class="live-box">
+          <div class="live j2">
+            <div class=""></div>
+          </div>
+          <div class="poro j2"></div>
+          <div class="t-more">
+            <h3 class="jt">Team Jinx</h3>
+            <h4>MisTake</h4>
+            <div class="t">
+              <p>傳說中半年開一次台的男人，世界冠軍，常常在減肥只是看起來不太像！
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div id="j3m" class="live-box">
+          <div class="live j3">
+            <div class=""></div>
+          </div>
+          <div class="poro j3"></div>
+          <div class="t-more">
+            <h3 class="jt">Team Jinx</h3>
+            <h4>Albis</h4>
+            <div class="t">
+              <p>擔任選手時是隊伍中的大腦，對於各類遊戲都有一定的掌握能力，兼具可愛與毒舌的魅力！
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div id="j4m" class="live-box">
+          <div class="live j4">
+            <div class=""></div>
+          </div>
+          <div class="poro j4"></div>
+          <div class="t-more">
+            <h3 class="jt">Team Jinx</h3>
+            <h4>Tom60229</h4>
+            <div class="t">
+              <p>大哥好燙！經常代表台灣以卡牌遊戲征服國際，擁有獨特魅力的辣個男人！
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div id="y1m" class="live-box">
+          <div class="live y1">
+            <div class=""></div>
+          </div>
+          <div class="poro y1"></div>
+          <div class="t-more">
+            <h3 class="jt">Team Yasuo</h3>
+            <h4>Shaxy</h4>
+            <div class="t">
+              <p>前知名卡牌遊戲職業選手，想要薛喜的牌組嗎？拿到就等著電梯向下吧！ㄚ～～～
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div id="y2m" class="live-box">
+          <div class="live y2">
+            <div class=""></div>
+          </div>
+          <div class="poro y2"></div>
+          <div class="t-more">
+            <h3 class="jt">Team Yasuo</h3>
+            <h4>BeBe</h4>
+            <div class="t">
+              <p>小魚蛋的阿爸，曾經在召喚峽谷征服世界的傻笑之王，是否也能征服符文大地呢？
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div id="y3m" class="live-box">
+          <div class="live y3">
+            <div class=""></div>
+          </div>
+          <div class="poro y3"></div>
+          <div class="t-more">
+            <h3 class="jt">Team Yasuo</h3>
+            <h4>Backstairs</h4>
+            <div class="t">
+              <p>江湖人稱卑鄙光頭師父、近期洋溢父愛的操盤大師，我早說A車一定行！
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div id="y4m" class="live-box">
+          <div class="live y4">
+            <div class=""></div>
+          </div>
+          <div class="poro y4"></div>
+          <div class="t-more">
+            <h3 class="jt">Team Yasuo</h3>
+            <h4>Uzra</h4>
+            <div class="t">
+              <p>亞洲訂閱王、糞歌指揮官，實況界勵志代表，為了實況和觀眾燃燒自己的生命鬥士！ </p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+
+    </div>
+  </div>
   <!--  -->
   <!-- prize -->
-  <div class="bg4" id="prize">
+  <div class="bg4" id="ap3">
     <div class="center">
       <div class="prize-more">
         <div class="box-img">
@@ -163,7 +391,7 @@
         <ol>
           <li>預測成功者即享有抽獎資格，每一 Facebook 帳號限一次中獎機會。</li>
           <li>中獎名單將於 5/8(五) 前公布於 Legends of Runeterra- 符文大地傳說官方粉絲團，並發送中獎通知信至填寫信箱內，
-              若因填寫錯誤至無法收到中獎通知信，將視同自動放棄中獎資格。</li>
+            若因填寫錯誤至無法收到中獎通知信，將視同自動放棄中獎資格。</li>
           <li>本公司保有保留變更或終止本活動時間、內容之權利。</li>
         </ol>
       </div>
@@ -171,8 +399,207 @@
   </div>
   <!-- 投票 -->
   <!--  -->
-</body>
+  <div class="bg5" id="ap4">
+    <div class="center">
+      <div class="more">
+        <div class="text">
+          <h2 class="style2 n1 ff">我要預測<span>08</span></h2>
+          <h3>1.登入ＦＢ+按讚</h3>
+        </div>
+        <!-- 登入系統  /out 為已登入圖素 -->
+        <div class="login">
+          <div class="fb in"></div>
+          <!-- <div class="fb out"></div> -->
+          <div class="fb-box">
+            <div class="fb-page" data-href="https://www.facebook.com/LegendsofRuneterraTW/" data-tabs=""
+              data-width="300" data-height="70" data-small-header="false" data-adapt-container-width="false"
+              data-hide-cover="false" data-show-facepile="false">
+              <blockquote cite="https://www.facebook.com/LegendsofRuneterraTW/" class="fb-xfbml-parse-ignore"><a
+                  href="https://www.facebook.com/LegendsofRuneterraTW/">Legends of Runeterra - 符文大地傳說</a></blockquote>
+            </div>
+          </div>
+          <hr>
+          <div class="text">
+            <h3>2.登錄手機號碼與Email</h3>
+          </div>
+          <div class="form">
+            <div class="box1">
+              <select class="form-control" id="">
+                <option>台灣</option>
+                <option>香港</option>
+                <option>澳門</option>
+              </select>
+            </div>
+            <div class="box2">
+              <input type="tel" class="form-control" required="required" id="" placeholder="輸入電話號碼">
+            </div>
+            <div class="box3">
+              <input type="email" class="form-control" required="required" id="" placeholder="輸入 email">
+            </div>
+          </div>
+          <hr>
+          <div class="text">
+            <h3 class="ps">3.投票給你心目中的優勝者</h3>
+          </div>
+          <!-- 串接VS -->
+          <div class="vs-box">
+            <div class="text">
+              <h3>積分冠軍</h3>
+            </div>
+            <div class="vs-all">
+              <div class="vs-select">
+                <select class="form-control" id="">
+                  <option value="" disabled selected hidden>請選擇</option>
+                  <option>Team Jinx</option>
+                  <option>Team Yasuo</option>
+                </select>
+              </div>
+              <div class="vs-more">
+                <div class="n-id">
+                  <div class="l-t">Team Jinx</div>
+                  <div class="r-t">Team Yasuo</div>
+                </div>
+                <div class="bar">
+                  <div class="progress-bar jt" style="width: 70%">
+                    70%</div>
+                  <div class="progress-bar yt" style="width: 30%"> 30%</div>
 
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /end -->
+          <!-- 串接VS -->
+          <div class="vs-box">
+            <div class="text">
+              <h3>場次一 04/20(一) 20:00 </h3>
+            </div>
+            <div class="vs-all">
+              <div class="vs-select">
+                <select class="form-control" id="">
+                  <option value="" disabled selected hidden>請選擇</option>
+                  <option>Tsuki</option>
+                  <option>Shaxy</option>
+                </select>
+              </div>
+              <div class="vs-more">
+
+                <div class="n-id">
+                  <div class="l-t">Tsuki</div>
+                  <div class="r-t">Shaxy</div>
+                </div>
+                <div class="bar">
+                  <div class="progress-bar jt" style="width: 70%">
+                    70%</div>
+                  <div class="progress-bar yt" style="width: 30%"> 30%</div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /end -->
+          <!-- 串接VS -->
+          <div class="vs-box">
+            <div class="text">
+              <h3>場次二 04/20(一) 21:30</h3>
+            </div>
+            <div class="vs-all">
+              <div class="vs-select">
+                <select class="form-control" id="">
+                  <option value="" disabled selected hidden>請選擇</option>
+                  <option>MisTake</option>
+                  <option>BeBe</option>
+                </select>
+              </div>
+              <div class="vs-more">
+                <div class="n-id">
+                  <div class="l-t">MisTake</div>
+                  <div class="r-t">BeBe</div>
+                </div>
+                <div class="bar">
+                  <div class="progress-bar jt" style="width: 40%">
+                    40%</div>
+                  <div class="progress-bar yt" style="width: 60%"> 60%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /end -->
+          <!-- 串接VS -->
+          <div class="vs-box">
+            <div class="text">
+              <h3>場次三 04/23(四) 20:00</h3>
+            </div>
+            <div class="vs-all">
+              <div class="vs-select">
+                <select class="form-control" id="">
+                  <option value="" disabled selected hidden>請選擇</option>
+                  <option>MisTake</option>
+                  <option>BeBe</option>
+                </select>
+              </div>
+              <div class="vs-more">
+                <div class="n-id">
+                  <div class="l-t">Albis</div>
+                  <div class="r-t">Backstairs</div>
+                </div>
+                <div class="bar">
+                  <div class="progress-bar jt" style="width: 40%">
+                    40%</div>
+                  <div class="progress-bar yt" style="width: 60%"> 60%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /end -->
+          <!-- 串接VS -->
+          <div class="vs-box">
+            <div class="text">
+              <h3>場次四 04/23(四) 21:30</h3>
+            </div>
+            <div class="vs-all">
+              <div class="vs-select">
+                <select class="form-control" id="">
+                  <option value="" disabled selected hidden>請選擇</option>
+                  <option>Tom60229</option>
+                  <option>Uzra</option>
+                </select>
+              </div>
+              <div class="vs-more">
+                <div class="n-id">
+                  <div class="l-t">Tom60229</div>
+                  <div class="r-t">Uzra</div>
+                </div>
+                <div class="bar">
+                  <div class="progress-bar jt" style="width: 40%">
+                    40%</div>
+                  <div class="progress-bar yt" style="width: 60%"> 60%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /end -->
+          <hr>
+          <!-- 按鈕 -->
+          <div class="gobtn"></div>
+          <div class="ps-p">投票資料不齊全尚未報名完成</div>
+        </div>
+      </div>
+    </div>
+    <div class="f">
+      <a href="http://www.taiwanmobile.com/" target="_blank">
+        <div class="tm"></div>
+      </a>
+    </div>
+    <div class="sort"></div>
+  </div>
+
+</body>
+<!--  -->
+<!-- <div id="fb-root"></div> -->
+<script async defer crossorigin="anonymous"
+  src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&autoLogAppEvents=1&version=v6.0&appId=1557351294486699"></script>
+<!--  -->
 <script>
 
 </script>

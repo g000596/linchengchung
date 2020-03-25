@@ -62,6 +62,77 @@ a {
   text-decoration: none;
 }
 
+.popup .popup-bg {
+  z-index: 10;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.63);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.popup .popup-bg .box {
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  background-image: url(../img/bg2.jpg);
+  border: 1px solid #bbac97;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px;
+}
+
+.popup .popup-bg .box .tt {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.popup .popup-bg .box .tt .btn {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0 auto;
+  text-align: center;
+  width: 80px;
+  color: #bbac97;
+  padding: 10px 15px;
+  background: #4e3e2c;
+  border: 1px solid #bbac97;
+}
+
+.popup .popup-bg .box .tt .btn:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+.popup .popup-bg .box p {
+  color: #FFF;
+  text-align: center;
+}
+
+.popup .popup-bg .box .more {
+  width: 100%;
+  height: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .menu {
   width: 100%;
   min-width: 1000px;
@@ -71,6 +142,7 @@ a {
   background-color: #241f26;
   position: fixed;
   z-index: 5;
+  cursor: pointer;
 }
 
 .menu ul {
@@ -96,6 +168,11 @@ a {
   white-space: nowrap;
   width: auto;
   padding-right: 3%;
+}
+
+.menu ul li:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
 }
 
 .menu ul li.logo {
@@ -465,11 +542,51 @@ ol li {
   padding-bottom: 5px;
 }
 
+.form-control {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px auto;
+  padding: 0.375rem 0.75rem;
+  max-width: 700px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #c19a47;
+  background-color: #1e1b1b;
+  background-clip: padding-box;
+  color: #bbac97;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-family: "Microsoft JhengHei";
+  line-height: 1.5;
+  -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #bbac97;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #bbac97;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #bbac97;
+}
+
+.form-control::placeholder {
+  color: #bbac97;
+}
+
 html {
-  font-size: 16px;
-  line-height: 18px;
-  font-family: "Noto Sans TC", sans-serif, "Microsoft JhengHei";
   overflow-x: hidden;
+  font-size: 16px;
+  font-family: "Noto Sans TC", sans-serif, "Microsoft JhengHei";
+  line-height: 18px;
 }
 
 .m-off {
@@ -489,32 +606,32 @@ html {
 }
 
 .center {
+  position: relative;
   margin: 0 auto 0;
   max-width: 1000px;
-  position: relative;
 }
 
 .bg {
-  background-image: url(../img/bg2.jpg);
-  background-repeat: no-repeat;
-  height: 100%;
-  width: 100%;
-  min-width: 1000px;
-  height: 1000px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+  min-width: 1000px;
+  width: 100%;
+  height: 100%;
+  height: 1000px;
+  background-image: url(../img/bg2.jpg);
   background-position: top center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1000px) {
   .bg {
-    background-image: url(../img/head-m.jpg);
-    width: 100%;
-    min-width: auto;
-    background-size: 100%;
-    height: 100%;
     padding-top: 107%;
+    min-width: auto;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/head-m.jpg);
+    background-size: 100%;
   }
 }
 
@@ -525,163 +642,163 @@ html {
 }
 
 .bg .pc .aim {
-  margin: auto;
   position: absolute;
+  margin: auto;
 }
 
 .bg .pc .aim.title {
+  width: 953px;
+  height: 274px;
+  background-image: url(../img/title.png);
   margin: auto;
   top: 200px;
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: url(../img/title.png);
-  width: 953px;
-  height: 274px;
 }
 
 .bg .pc .aim.lor {
+  width: 430px;
+  height: 176px;
+  background-image: url(../img/logo.png);
   margin: auto;
   top: -244px;
   left: 14px;
   bottom: 0;
   right: 0;
-  background-image: url(../img/logo.png);
-  width: 430px;
-  height: 176px;
 }
 
 .bg .pc .aim.bg0-1 {
+  width: 990px;
+  height: 1225px;
+  background-image: url(../img/bg0-1.png);
   margin: auto;
   top: 227px;
   left: 0;
   bottom: 0;
   right: -675px;
-  background-image: url(../img/bg0-1.png);
-  width: 990px;
-  height: 1225px;
 }
 
 .bg .pc .aim.bg0-2 {
+  width: 1358px;
+  height: 1022px;
+  background-image: url(../img/bg0-2.png);
   margin: auto;
   top: 18px;
   left: -496px;
   bottom: 0;
   right: 0px;
-  background-image: url(../img/bg0-2.png);
-  width: 1358px;
-  height: 1022px;
 }
 
 .bg .pc .aim.bg0-3 {
+  width: 992px;
+  height: 764px;
+  background-image: url(../img/bg0-3.png);
   margin: auto;
   top: 960px;
   left: 0px;
   bottom: 0;
   right: -1180px;
-  background-image: url(../img/bg0-3.png);
-  width: 992px;
-  height: 764px;
 }
 
 .bg .pc .aim.bg0-4 {
+  width: 1072px;
+  height: 1046px;
+  background-image: url(../img/bg0-4.png);
   margin: auto;
   top: 732px;
   left: -1202px;
   bottom: 0;
   right: 0;
-  background-image: url(../img/bg0-4.png);
-  width: 1072px;
-  height: 1046px;
 }
 
 .bg .pc .aim.bg0-5 {
+  width: 580px;
+  height: 570px;
+  background-image: url(../img/bg0-5.png);
   margin: auto;
   top: 82px;
   left: 0;
   bottom: 0;
   right: -1310px;
-  background-image: url(../img/bg0-5.png);
-  width: 580px;
-  height: 570px;
 }
 
 .bg .pc .aim.bg0-6 {
+  width: 471px;
+  height: 566px;
+  background-image: url(../img/bg0-6.png);
   margin: auto;
   top: 82px;
   left: -1445px;
   bottom: 0;
   right: 0;
-  background-image: url(../img/bg0-6.png);
-  width: 471px;
-  height: 566px;
 }
 
 .bg .pc .aim.bg0-7 {
+  width: 548px;
+  height: 408px;
+  background-image: url(../img/bg0-7.png);
   margin: auto;
   top: -525px;
   left: 0;
   bottom: 0;
   right: -1180px;
-  background-image: url(../img/bg0-7.png);
-  width: 548px;
-  height: 408px;
 }
 
 .bg .pc .aim.bg0-8 {
+  width: 510px;
+  height: 443px;
+  background-image: url(../img/bg0-8.png);
   margin: auto;
   top: -554px;
   left: -915px;
   bottom: 0;
   right: 0;
-  background-image: url(../img/bg0-8.png);
-  width: 510px;
-  height: 443px;
 }
 
 .bg1 {
-  background-image: url(../img/bg1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  min-width: 1000px;
-  height: 500px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
   padding-top: 340px;
+  min-width: 1000px;
+  width: 100%;
+  height: 100%;
+  height: 500px;
+  background-image: url(../img/bg1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1000px) {
   .bg1 {
-    height: auto;
     padding-top: 33%;
     min-width: auto;
+    height: auto;
   }
 }
 
 .bg1 .more {
-  right: 0;
-  width: 650px;
-  display: inline-block;
   position: absolute;
+  right: 0;
+  display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 650px;
 }
 
 @media screen and (max-width: 1000px) {
   .bg1 .more {
-    width: 100%;
+    position: relative;
     padding-right: 4%;
     padding-left: 4%;
-    position: relative;
+    width: 100%;
   }
 }
 
 .bg1 .more .box {
-  width: 100%;
   padding-bottom: 60px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -691,13 +808,13 @@ html {
 }
 
 .lux {
-  margin: auto;
   position: absolute;
-  background-image: url(../img/lux-1.png);
-  width: 871px;
   z-index: 2;
-  height: 1203px;
   display: inline-block;
+  margin: auto;
+  width: 871px;
+  height: 1203px;
+  background-image: url(../img/lux-1.png);
   margin: auto;
   top: 2900px;
   left: -1060px;
@@ -712,15 +829,24 @@ html {
 }
 
 .youtube {
-  width: 880px;
-  height: 496px;
-  margin: 0 auto;
-  margin-top: -220px;
-  z-index: 1;
+  position: absolute;
   right: 0;
   left: 0;
-  position: absolute;
+  z-index: 1;
+  margin: 0 auto;
+  margin-top: -220px;
+  width: 880px;
+  height: 496px;
   border: 1px #c6c0af solid;
+}
+
+@media screen and (max-width: 1000px) {
+  .youtube {
+    margin-top: -23%;
+    padding-top: 51%;
+    width: 90%;
+    height: auto;
+  }
 }
 
 .youtube iframe {
@@ -731,54 +857,45 @@ html {
   height: 100%;
 }
 
-@media screen and (max-width: 1000px) {
-  .youtube {
-    width: 90%;
-    height: auto;
-    padding-top: 51%;
-    margin-top: -23%;
-  }
-}
-
 .youtube::before {
-  z-index: 2;
-  pointer-events: none;
   position: absolute;
   top: -14px;
   left: 6px;
-  background-size: contain;
-  height: 522px;
-  content: " ";
-  background-image: url(../img/youtube-l.png);
-  background-repeat: no-repeat;
+  z-index: 2;
   width: 100%;
+  height: 522px;
+  background-image: url(../img/youtube-l.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: " ";
+  pointer-events: none;
 }
 
 .bg3 {
-  background-image: url(../img/bg2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  min-width: 1000px;
-  height: 1000px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+  min-width: 1000px;
+  width: 100%;
+  height: 100%;
+  height: 1000px;
+  background-image: url(../img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1000px) {
   .bg3 {
-    height: auto;
     min-width: auto;
+    height: auto;
   }
 }
 
 .bg3 .date {
   position: absolute;
   z-index: 3;
-  width: 600px;
   padding-top: 100px;
+  width: 600px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -790,24 +907,19 @@ html {
 }
 
 .bg3 .date h2 {
-  padding-left: 28px;
   padding-bottom: 60px;
+  padding-left: 28px;
   width: 100%;
 }
 
 @media screen and (max-width: 1000px) {
   .bg3 .date h2 {
-    width: 300px;
     margin: auto;
+    width: 300px;
   }
 }
 
 .bg3 .date .box {
-  background-repeat: no-repeat;
-  background-image: url(../img/date-bg.png);
-  width: 592px;
-  height: 153px;
-  padding-bottom: 30px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -815,6 +927,11 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-bottom: 30px;
+  width: 592px;
+  height: 153px;
+  background-image: url(../img/date-bg.png);
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1000px) {
@@ -825,43 +942,43 @@ html {
 
 @media screen and (max-width: 767.98px) {
   .bg3 .date .box {
-    width: 100%;
-    max-width: 592px;
-    height: auto;
-    padding-top: 6.5%;
-    padding-bottom: 8%;
-    background-size: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin-bottom: 3%;
+    padding-top: 6.5%;
+    padding-bottom: 8%;
+    max-width: 592px;
+    width: 100%;
+    height: auto;
+    background-size: 100%;
   }
 }
 
 .bg3 .date .box .text h3 {
-  text-align: center;
   position: absolute;
-  margin: 0;
-  left: 0;
   top: -14px;
   right: 0;
+  left: 0;
+  margin: 0;
+  text-align: center;
 }
 
 @media screen and (max-width: 500px) {
   .bg3 .date .box .text h3 {
-    font-size: 1.2rem;
     top: -10px;
+    font-size: 1.2rem;
   }
 }
 
 .bg3 .date .box .player {
-  padding: 17px 36px 20px 36px;
-  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 17px 36px 20px 36px;
+  width: 50%;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -874,12 +991,12 @@ html {
 }
 
 .bg3 .date .box .player .img {
-  background-repeat: no-repeat;
   width: 87px;
   height: 94px;
-  cursor: pointer;
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -929,15 +1046,15 @@ html {
 }
 
 .bg3 .date .box .player .img:hover::after {
-  background-repeat: no-repeat;
-  content: " ";
+  position: absolute;
+  z-index: 2;
   width: 87px;
   height: 94px;
-  z-index: 2;
-  position: absolute;
+  background-image: url(../img/twitch.png);
   background-position: center;
   background-size: contain;
-  background-image: url(../img/twitch.png);
+  background-repeat: no-repeat;
+  content: " ";
 }
 
 @media screen and (max-width: 767.98px) {
@@ -955,9 +1072,9 @@ html {
 }
 
 .bg3 .date .box .player .name {
+  padding-left: 10px;
   color: #baac97;
   font-size: 1.6rem;
-  padding-left: 10px;
 }
 
 @media screen and (max-width: 500px) {
@@ -992,9 +1109,9 @@ html {
 }
 
 .bg3 .date-more .live-box .t-more h3 {
+  color: white;
   text-align: center;
   text-transform: uppercase;
-  color: white;
   text-shadow: black 0.1em 0.1em 0.2em;
   font-weight: 00;
   font-size: 2rem;
@@ -1010,29 +1127,29 @@ html {
 }
 
 .bg3 .date-more .live-box .t-more h4 {
-  text-shadow: black 0.1em 0.1em 0.2em;
-  color: #fff;
+  padding-bottom: 10px;
+  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: black 0.1em 0.1em 0.2em;
   font-weight: 900;
   font-size: 3rem;
   line-height: 3rem;
-  padding-bottom: 10px;
 }
 
 .bg3 .date-more .live-box .t-more .t {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-repeat: no-repeat;
   padding: 10px;
-  background-image: url(../img/date-bg2.png);
   width: 393px;
   height: 70px;
+  background-image: url(../img/date-bg2.png);
+  background-repeat: no-repeat;
 }
 
 .bg3 .date-more .live-box .t-more .t p {
-  font-weight: 400;
   color: #faf9f8;
+  font-weight: 400;
 }
 
 .bg3 .date-more .live-box .poro {
@@ -1082,22 +1199,22 @@ html {
 }
 
 .bg3 .date-more .live-box .live {
+  position: absolute;
   right: 0;
   bottom: 0;
-  position: absolute;
   width: 495px;
   height: 966px;
   background-repeat: no-repeat;
 }
 
 .bg3 .date-more .live-box .live.j1 {
-  background-position: center top 50px;
   background-image: url(../img/j-live-1.png);
+  background-position: center top 50px;
 }
 
 .bg3 .date-more .live-box .live.j2 {
-  background-position: center top 50px;
   background-image: url(../img/j-live-2.png);
+  background-position: center top 50px;
 }
 
 .bg3 .date-more .live-box .live.j3 {
@@ -1113,93 +1230,96 @@ html {
 }
 
 .bg3 .date-more .live-box .live.y2 {
-  background-position: center top 50px;
   background-image: url(../img/y-live-2.png);
+  background-position: center top 50px;
 }
 
 .bg3 .date-more .live-box .live.y3 {
-  background-position: center top 50px;
   background-image: url(../img/y-live-3.png);
+  background-position: center top 50px;
 }
 
 .bg3 .date-more .live-box .live.y4 {
-  background-position: left 50px top 50px;
   background-image: url(../img/y-live-4.png);
+  background-position: left 50px top 50px;
 }
 
 .bg3 .date-more .live-box .live div {
-  right: -100px;
-  margin: auto;
   position: absolute;
+  right: -100px;
   left: 0;
-  background-image: url(../img/line-r.png);
+  margin: auto;
   width: 559px;
   height: 559px;
+  background-image: url(../img/line-r.png);
 }
 
 .bg4 {
-  background-image: url(../img/bg3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-  width: 100%;
-  min-width: 1000px;
-  height: 1070px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-width: 1000px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1000px) {
   .bg4 {
+    padding-top: 10%;
+    padding-bottom: 10%;
     min-width: auto;
     height: auto;
   }
 }
 
 .bg4 .prize-more .box-img {
-  width: 60%;
   float: left;
+  width: 60%;
 }
 
 @media screen and (max-width: 1000px) {
   .bg4 .prize-more .box-img {
-    width: 100%;
     position: relative;
     padding-bottom: 20px;
+    width: 100%;
   }
 }
 
 .bg4 .prize-more .box-img div {
+  width: 550px;
+  height: 424px;
   background-image: url(../img/prize-1.png);
   background-size: contain;
   background-repeat: no-repeat;
-  width: 550px;
-  height: 424px;
 }
 
 @media screen and (max-width: 1000px) {
   .bg4 .prize-more .box-img div {
     margin: 0 auto;
-    max-width: 550px;
-    height: auto;
-    width: 100%;
     padding-top: 53%;
+    max-width: 550px;
+    width: 100%;
+    height: auto;
     background-position: center;
   }
 }
 
 .bg4 .prize-more .box-txt {
-  width: 40%;
   display: inline-block;
+  width: 40%;
 }
 
 @media screen and (max-width: 1000px) {
   .bg4 .prize-more .box-txt {
-    width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 4%;
+    width: 100%;
   }
 }
 
@@ -1214,55 +1334,55 @@ html {
 .bg4 .prize-more2 .box-txt {
   position: relative;
   display: inline-block;
-  width: 60%;
   float: left;
+  width: 60%;
 }
 
 @media screen and (max-width: 1000px) {
   .bg4 .prize-more2 .box-txt {
-    width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 4%;
+    width: 100%;
   }
 }
 
 .bg4 .prize-more2 .box-txt .prize-m1 {
-  width: 582px;
-  height: 228px;
-  background-repeat: no-repeat;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: url(../img/date-bg3.png);
-  padding: 30px 20px;
   margin-bottom: 20px;
+  padding: 30px 20px;
+  width: 582px;
+  height: 228px;
+  background-image: url(../img/date-bg3.png);
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1000px) {
   .bg4 .prize-more2 .box-txt .prize-m1 {
-    background-size: contain;
     margin: 0 auto;
-    max-width: 582px;
-    height: auto;
-    width: 100%;
-    padding-top: 5%;
     margin-bottom: 2%;
+    padding-top: 5%;
+    max-width: 582px;
+    width: 100%;
+    height: auto;
     background-position: center;
+    background-size: contain;
   }
 }
 
 @media screen and (max-width: 500px) {
   .bg4 .prize-more2 .box-txt .prize-m1 {
     padding-top: 8%;
-    padding-left: 10px;
     padding-right: 10px;
+    padding-left: 10px;
   }
 }
 
 .bg4 .prize-more2 .box-txt .prize-m1 h3 {
-  text-align: center;
-  color: #c49250;
   padding-bottom: 20px;
+  color: #c49250;
+  text-align: center;
 }
 
 @media screen and (max-width: 500px) {
@@ -1295,37 +1415,43 @@ html {
 }
 
 .bg4 .prize-more2 .box-txt .prize-m2 {
-  right: 20px;
   position: absolute;
-  width: 382px;
-  height: 150px;
-  background-repeat: no-repeat;
+  right: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-image: url(../img/date-bg4.png);
   padding: 30px 20px;
+  width: 382px;
+  height: 150px;
+  background-image: url(../img/date-bg4.png);
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1000px) {
   .bg4 .prize-more2 .box-txt .prize-m2 {
+    position: relative;
     right: 0;
     left: 0;
-    position: relative;
-    background-image: url(../img/date-bg3.png);
-    background-size: contain;
     margin: 0 auto;
-    max-width: 582px;
-    height: auto;
-    width: 100%;
     padding-top: 5%;
+    max-width: 582px;
+    width: 100%;
+    height: auto;
+    background-image: url(../img/date-bg3.png);
     background-position: center;
+    background-size: contain;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .bg4 .prize-more2 .box-txt .prize-m2 {
+    font-size: 0.8rem;
   }
 }
 
 .bg4 .prize-more2 .box-txt .prize-m2 h3 {
-  text-align: center;
-  color: #c49250;
   padding-bottom: 20px;
+  color: #c49250;
+  text-align: center;
 }
 
 @media screen and (max-width: 500px) {
@@ -1345,37 +1471,442 @@ html {
   line-height: 1.8rem;
 }
 
-@media screen and (max-width: 360px) {
-  .bg4 .prize-more2 .box-txt .prize-m2 {
-    font-size: 0.8rem;
-  }
-}
-
 .bg4 .prize-more2 .te {
   display: inline-block;
   width: 40%;
   height: 545px;
+  background-image: url(../img/teemo.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(../img/teemo.png);
 }
 
 @media screen and (max-width: 1000px) {
   .bg4 .prize-more2 .te {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 40%;
-    padding-top: 40%;
-    position: relative;
-    height: auto;
     margin: 0 auto;
+    padding-top: 40%;
+    width: 40%;
+    height: auto;
   }
 }
 
-.bg4 .prize-more2 .ps {
+.bg4 .ps {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 4%;
+}
+
+.bg5 {
+  position: relative;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  min-width: 1000px;
+  width: 100%;
+  height: auto;
+  background-image: url(../img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1000px) {
+  .bg5 {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    min-width: auto;
+    height: auto;
+  }
+}
+
+.bg5 .gobtn {
+  margin: 0 auto;
+  padding-top: 11%;
+  max-width: 314px;
+  width: 100%;
+  background-image: url(../img/btn.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg5 .gobtn {
+    max-width: 220px;
+    width: 100%;
+  }
+}
+
+.bg5 .gobtn:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+.bg5 .ps-p {
+  padding-top: 10px;
+  color: #df4e4e;
+  text-align: center;
+}
+
+.bg5 .more .text {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+  width: 527px;
+}
+
+@media screen and (max-width: 1000px) {
+  .bg5 .more .text {
+    max-width: 280px;
+    width: 100%;
+  }
+}
+
+.bg5 .more .text h3 {
+  text-align: center;
+  letter-spacing: 0px;
+  font-size: 1.4rem;
+}
+
+.bg5 .more .text h3.ps {
+  padding-bottom: 40px;
+}
+
+.bg5 .more .login .fb {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 255px;
+  height: 51px;
+  background-repeat: no-repeat;
+}
+
+.bg5 .more .login .fb.in {
+  background-image: url(../img/fb-btn.png);
+  cursor: pointer;
+}
+
+.bg5 .more .login .fb.in:hover {
+  -webkit-filter: brightness(1.2);
+          filter: brightness(1.2);
+}
+
+.bg5 .more .login .fb.out {
+  background-image: url(../img/fb-btn-in.png);
+  cursor: auto;
+}
+
+.bg5 .more .login .fb-box {
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 300px;
+}
+
+.bg5 .more .login hr {
+  display: block;
+  margin: 0 auto;
+  padding-top: 2%;
+  padding-bottom: 8%;
+  height: 14px;
+  border: none;
+  background-image: url(../img/line-3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1000px) {
+  .bg5 .more .login hr {
+    width: 90%;
+    background-size: contain;
+  }
+}
+
+.bg5 .more .login .form {
+  margin: 0px auto;
+  padding: 4%;
+  max-width: 700px;
+  color: #bbac97;
+  font-size: 1rem;
+}
+
+.bg5 .more .login .form .box1 {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  width: 15%;
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg5 .more .login .form .box1 {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bg5 .more .login .form .box1 {
+    width: 35%;
+  }
+}
+
+.bg5 .more .login .form .box2 {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  width: 35%;
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg5 .more .login .form .box2 {
+    width: 69%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bg5 .more .login .form .box2 {
+    width: 63%;
+  }
+}
+
+.bg5 .more .login .form .box3 {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  width: 48%;
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg5 .more .login .form .box3 {
+    width: 100%;
+  }
+}
+
+.bg5 .more .login .vs-box {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  width: 746px;
+  height: 177px;
+  background-image: url(../img/date-bg5.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1000px) {
+  .bg5 .more .login .vs-box {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 746px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg5 .more .login .vs-box {
+    height: 168px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bg5 .more .login .vs-box {
+    margin-bottom: 0;
+    height: 150px;
+  }
+}
+
+.bg5 .more .login .vs-box .text {
+  position: relative;
+  top: -7px;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  .bg5 .more .login .vs-box .text {
+    top: 10px;
+  }
+  .bg5 .more .login .vs-box .text h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.bg5 .more .login .vs-box .vs-all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 50px 24px 50px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg5 .more .login .vs-box .vs-all {
+    padding: 1% 7% 1% 7%;
+  }
+}
+
+.bg5 .more .login .vs-box .vs-all .vs-select {
+  width: 20%;
+}
+
+@media screen and (max-width: 500px) {
+  .bg5 .more .login .vs-box .vs-all .vs-select {
+    width: 30%;
+  }
+  .bg5 .more .login .vs-box .vs-all .vs-select .form-control {
+    font-size: 1rem;
+  }
+}
+
+.bg5 .more .login .vs-box .vs-all .vs-more {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+  width: 80%;
+  height: 100px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg5 .more .login .vs-box .vs-all .vs-more {
+    padding: 17px 20px 20px 20px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg5 .more .login .vs-box .vs-all .vs-more {
+    width: 70%;
+  }
+}
+
+.bg5 .more .login .vs-box .vs-all .vs-more .n-id {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  color: #bbac97;
+}
+
+@media screen and (max-width: 360px) {
+  .bg5 .more .login .vs-box .vs-all .vs-more .n-id {
+    font-size: 0.6rem;
+  }
+}
+
+.bg5 .more .login .vs-box .vs-all .vs-more .n-id .l-t {
+  float: left;
+}
+
+.bg5 .more .login .vs-box .vs-all .vs-more .n-id .r-t {
+  float: right;
+}
+
+.bg5 .more .login .vs-box .vs-all .vs-more .bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 5px;
+  width: 100%;
+  height: 70px;
+  border: 1px solid #c19a47;
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg5 .more .login .vs-box .vs-all .vs-more .bar {
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .bg5 .more .login .vs-box .vs-all .vs-more .bar {
+    height: 30px;
+  }
+}
+
+.bg5 .more .login .vs-box .vs-all .vs-more .bar .progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 50px;
+  height: 100%;
+  color: #dedede;
+  font-size: 1.2rem;
+  line-height: 20px;
+}
+
+.bg5 .more .login .vs-box .vs-all .vs-more .bar .progress-bar.jt {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ad70a9), to(#962c90));
+  background: linear-gradient(#ad70a9, #962c90);
+}
+
+.bg5 .more .login .vs-box .vs-all .vs-more .bar .progress-bar.yt {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3797e2), to(#236192));
+  background: linear-gradient(#3797e2, #236192);
+}
+
+.sort {
+  padding-top: 5%;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-image: url(../img/15s.png);
+  width: 63px;
+  height: 63px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+  .sort {
+    width: 40px;
+    height: 40px;
+    background-size: contain;
+  }
+}
+
+.f {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 15%;
+  width: 349px;
+  height: 53px;
+  background-image: url(../img/logo2.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 500px) {
+  .f {
+    width: 200px;
+    height: 40px;
+    background-size: contain;
+  }
+}
+
+.f .tm {
+  position: absolute;
+  right: 0;
+  padding-top: 17%;
+  width: 55%;
 }
