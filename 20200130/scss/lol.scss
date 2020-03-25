@@ -49,7 +49,6 @@ html {
 //// // // // // // //  首頁
 
 .bg {
-  
   position: relative;
   overflow: hidden;
   min-width: 1000px;
@@ -69,14 +68,12 @@ html {
     background-size: 100%;
     padding-top: 107%;
     height: auto;
-
   }
   // @include respond-to(xs) {
   //   background-image: url(../img/head-m.jpg);
   //   min-width: auto;
   //   max-width: 360px;
   //   height: 386px;
-
 
   // }
 
@@ -92,9 +89,37 @@ html {
       &.title {
         width: 953px;
         height: 274px;
-        background-image: url(../img/title.png);
+        // background-image: url(../img/title0.png);
 
         @include amid($t: 200px, $l: 0, $b: 0, $r: 0);
+        //
+        // transform: scale(2);
+        // transform: scale(-2);
+        @include animation(
+          $delay: 0.7s,
+          $duration: 2s,
+          $animation: tet,
+          $frequency: 1,
+          $forwards: forwards,
+          $timing: ease
+        );
+        @include keyframes(tet) {
+          0% {
+            // transform: scale(-2);
+            background-image: url(../img/title0.png);
+          }
+          40% {
+            // transform: scale(1);
+            background-image: url(../img/title1.png);
+            // opacity:.5;
+          }
+          100% {
+            // transform: scale(1);
+            background-image: url(../img/title.png);
+            // opacity: 1;
+          }
+        }
+        //
       }
 
       &.lor {
@@ -103,6 +128,27 @@ html {
         background-image: url(../img/logo.png);
 
         @include amid($t: -244px, $l: 14px, $b: 0, $r: 0);
+        //
+        opacity: 0;
+        @include animation(
+          $delay: 0.1s,
+          $duration: 0.8s,
+          $animation: zz,
+          $frequency: 1,
+          $forwards: forwards,
+          $timing: ease
+        );
+        @include keyframes(zz) {
+          0% {
+            opacity: 0;
+            transform: translate(20px) scale(2);
+          }
+          100% {
+            opacity: 1;
+            transform: translate(20px) scale(1);
+          }
+        }
+        //
       }
 
       &.bg0-1 {
@@ -111,6 +157,27 @@ html {
         background-image: url(../img/bg0-1.png);
 
         @include amid($t: 227px, $l: 0, $b: 0, $r: -675px);
+        //
+        opacity: 0;
+        @include animation(
+          $delay: 0.4s,
+          $duration: 0.8s,
+          $animation: he2,
+          $frequency: 1,
+          $forwards: forwards,
+          $timing: ease
+        );
+        @include keyframes(he2) {
+          0% {
+            opacity: 0;
+            transform: translate(20px) scale(0.8);
+          }
+          100% {
+            opacity: 1;
+            transform: rotate(0deg) translate(0px) scale(1);
+          }
+        }
+        //
       }
 
       &.bg0-2 {
@@ -119,6 +186,27 @@ html {
         background-image: url(../img/bg0-2.png);
 
         @include amid($t: 18px, $l: -496px, $b: 0, $r: 0px);
+        //
+        opacity: 0;
+        @include animation(
+          $delay: 0.4s,
+          $duration: 0.8s,
+          $animation: he2,
+          $frequency: 1,
+          $forwards: forwards,
+          $timing: ease
+        );
+        @include keyframes(he2) {
+          0% {
+            opacity: 0;
+            transform: translate(20px) scale(0.8);
+          }
+          100% {
+            opacity: 1;
+            transform: rotate(0deg) translate(0px) scale(1);
+          }
+        }
+        //
       }
 
       &.bg0-3 {
@@ -126,7 +214,26 @@ html {
         height: 764px;
         background-image: url(../img/bg0-3.png);
 
-        @include amid($t: 960px, $l: 0px, $b: 0, $r: -1180px);
+        @include amid($t: 1600px, $l: 0px, $b: 0, $r: -1180px);
+        //
+        opacity: 1;
+        @include animation(
+          $delay: 1s,
+          $duration: 0.8s,
+          $animation: hh2,
+          $frequency: 1,
+          $forwards: forwards,
+          $timing: ease
+        );
+        @include keyframes(hh2) {
+          0% {
+            top: 1600px;
+          }
+          100% {
+            top: 960px;
+          }
+        }
+        //
       }
 
       &.bg0-4 {
@@ -134,7 +241,26 @@ html {
         height: 1046px;
         background-image: url(../img/bg0-4.png);
 
-        @include amid($t: 732px, $l: -1202px, $b: 0, $r: 0);
+        @include amid($t: 1600px, $l: -1202px, $b: 0, $r: 0);
+        //
+        opacity: 1;
+        @include animation(
+          $delay: 1.2s,
+          $duration: 0.8s,
+          $animation: hh2,
+          $frequency: 1,
+          $forwards: forwards,
+          $timing: ease
+        );
+        @include keyframes(hh2) {
+          0% {
+            top: 1600px;
+          }
+          100% {
+            top: 960px;
+          }
+        }
+        //
       }
 
       &.bg0-5 {
@@ -143,6 +269,25 @@ html {
         background-image: url(../img/bg0-5.png);
 
         @include amid($t: 82px, $l: 0, $b: 0, $r: -1310px);
+        //
+        opacity: 0;
+        @include animation(
+          $delay: 0.8s,
+          $duration: 0.8s,
+          $animation: he1,
+          $frequency: 1,
+          $forwards: forwards,
+          $timing: ease
+        );
+        @include keyframes(he1) {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        //
       }
 
       &.bg0-6 {
@@ -151,6 +296,25 @@ html {
         background-image: url(../img/bg0-6.png);
 
         @include amid($t: 82px, $l: -1445px, $b: 0, $r: 0);
+        //
+        opacity: 0;
+        @include animation(
+          $delay: 0.8s,
+          $duration: 0.8s,
+          $animation: he1,
+          $frequency: 1,
+          $forwards: forwards,
+          $timing: ease
+        );
+        @include keyframes(he1) {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        //
       }
 
       &.bg0-7 {
@@ -159,6 +323,25 @@ html {
         background-image: url(../img/bg0-7.png);
 
         @include amid($t: -525px, $l: 0, $b: 0, $r: -1180px);
+        //
+        opacity: 0;
+        @include animation(
+          $delay: 1s,
+          $duration: 0.8s,
+          $animation: he1,
+          $frequency: 1,
+          $forwards: forwards,
+          $timing: ease
+        );
+        @include keyframes(he1) {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        //
       }
 
       &.bg0-8 {
@@ -167,6 +350,25 @@ html {
         background-image: url(../img/bg0-8.png);
 
         @include amid($t: -554px, $l: -915px, $b: 0, $r: 0);
+        //
+        opacity: 0;
+        @include animation(
+          $delay: 1s,
+          $duration: 0.8s,
+          $animation: he1,
+          $frequency: 1,
+          $forwards: forwards,
+          $timing: ease
+        );
+        @include keyframes(he1) {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        //
       }
     }
   }
@@ -455,12 +657,39 @@ html {
             }
           }
         }
+        .name-m {
+          cursor: pointer;
+          display: none;
+          padding-left: 10px;
+          color: #baac97;
+          font-size: 1.6rem;
+          @include respond-to(md) {
+            display: block;
+            font-size: 1.2rem;
+            cursor: pointer;
+            &::after {
+              margin-left: 5px;
+              background-repeat: no-repeat;
+              background-position: center;
+              position: absolute;
+              background-image: url(../img/arrow-r.png);
+              width: 20px;
+              height: 20px;
+              content: " ";
+            }
+          }
 
+          @include respond-to(sm) {
+            font-size: 1rem;
+          }
+        }
         .name {
           padding-left: 10px;
           color: #baac97;
           font-size: 1.6rem;
-
+          @include respond-to(md) {
+            display: none;
+          }
           @include respond-to(sm) {
             font-size: 1rem;
           }
@@ -537,13 +766,32 @@ html {
 
       .poro {
         position: absolute;
-        right: -500px;
+        right: -1000px;
         bottom: 0;
         left: 0;
         margin: auto;
         width: 802px;
         height: 799px;
-
+        //
+opacity: 0;
+        @include animation(
+          $delay: 0.2s,
+          $duration: 0.2s,
+          $animation: poo,
+          $frequency: 1,
+          $forwards: forwards,
+          $timing: linear
+        );
+        @include keyframes(poo) {
+          0% {
+            opacity: 0;
+            right: -1000px;
+          }
+          100% {
+            right: -500px;opacity:1;
+          }
+        }
+        //
         // background: #000;
         &.p-off {
           left: 200px;
@@ -584,12 +832,30 @@ html {
 
       .live {
         position: absolute;
-        right: 0;
+        right: -500px;
         bottom: 0;
         width: 495px;
         height: 966px;
         background-repeat: no-repeat;
+        //
 
+        @include animation(
+          $delay: 0s,
+          $duration: 0.2s,
+          $animation: ll,
+          $frequency: 1,
+          $forwards: forwards,
+          $timing: linear
+        );
+        @include keyframes(ll) {
+          0% {
+            right: -500px;
+          }
+          100% {
+            right: 0px;
+          }
+        }
+        //
         &.j1 {
           background-image: url(../img/j-live-1.png);
           background-position: center top 50px;
@@ -635,6 +901,26 @@ html {
           width: 559px;
           height: 559px;
           background-image: url(../img/line-r.png);
+          //
+
+          @include animation(
+            $delay: 0s,
+            $duration: 3s,
+            $animation: rr,
+            $frequency: infinite,
+            $forwards: forwards,
+            $timing: linear
+          );
+          @include keyframes(rr) {
+            0% {
+              transform: rotate(0deg);
+            }
+            100% {
+              transform: rotate(360deg);
+            }
+          }
+          //
+          //
         }
       }
     }
@@ -670,7 +956,25 @@ html {
       // display: inline-block;
       float: left;
       width: 60%;
-
+        //
+    
+        @include animation(
+          $delay: 0s,
+          $duration: 1s,
+          $animation: pp,
+          $frequency:infinite,
+          $forwards: forwards,
+          $timing: linear
+        );
+        @include keyframes(pp) {
+          0% {
+            filter:brightness(1);
+          }
+          50% {
+            filter:brightness(1.1);
+          }
+        }
+        //
       @include respond-to(md) {
         position: relative;
         padding-bottom: 20px;

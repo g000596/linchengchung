@@ -24,5 +24,31 @@ $baseFSoffset: 100;
   left: $l;
   bottom: $b;
   right: $r;
+  
   }
   
+
+ 
+@mixin animation($delay, $duration, $animation, $frequency, $forwards, $timing) {
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-name: $animation;
+  animation-iteration-count: $frequency;
+  animation-fill-mode: $forwards;
+  animation-timing-function: $timing;
+}
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
