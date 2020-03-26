@@ -96,12 +96,12 @@ html {
         // transform: scale(2);
         // transform: scale(-2);
         @include animation(
-          $delay: 0.7s,
-          $duration: 2s,
+          $delay: 0s,
+          $duration: 0.6s,
           $animation: tet,
           $frequency: 1,
           $forwards: forwards,
-          $timing: ease
+          $timing: ease-in
         );
         @include keyframes(tet) {
           0% {
@@ -132,11 +132,11 @@ html {
         opacity: 0;
         @include animation(
           $delay: 0.1s,
-          $duration: 0.8s,
+          $duration: 0.6s,
           $animation: zz,
           $frequency: 1,
           $forwards: forwards,
-          $timing: ease
+          $timing: ease-out
         );
         @include keyframes(zz) {
           0% {
@@ -165,7 +165,7 @@ html {
           $animation: he2,
           $frequency: 1,
           $forwards: forwards,
-          $timing: ease
+          $timing: ease-out
         );
         @include keyframes(he2) {
           0% {
@@ -194,7 +194,7 @@ html {
           $animation: he2,
           $frequency: 1,
           $forwards: forwards,
-          $timing: ease
+          $timing: ease-out
         );
         @include keyframes(he2) {
           0% {
@@ -223,7 +223,7 @@ html {
           $animation: hh2,
           $frequency: 1,
           $forwards: forwards,
-          $timing: ease
+          $timing: ease-out
         );
         @include keyframes(hh2) {
           0% {
@@ -250,7 +250,7 @@ html {
           $animation: hh2,
           $frequency: 1,
           $forwards: forwards,
-          $timing: ease
+          $timing: ease-out
         );
         @include keyframes(hh2) {
           0% {
@@ -277,7 +277,7 @@ html {
           $animation: he1,
           $frequency: 1,
           $forwards: forwards,
-          $timing: ease
+          $timing: ease-out
         );
         @include keyframes(he1) {
           0% {
@@ -304,7 +304,7 @@ html {
           $animation: he1,
           $frequency: 1,
           $forwards: forwards,
-          $timing: ease
+          $timing: ease-out
         );
         @include keyframes(he1) {
           0% {
@@ -331,7 +331,7 @@ html {
           $animation: he1,
           $frequency: 1,
           $forwards: forwards,
-          $timing: ease
+          $timing: ease-out
         );
         @include keyframes(he1) {
           0% {
@@ -358,7 +358,7 @@ html {
           $animation: he1,
           $frequency: 1,
           $forwards: forwards,
-          $timing: ease
+          $timing: ease-out
         );
         @include keyframes(he1) {
           0% {
@@ -766,29 +766,30 @@ html {
 
       .poro {
         position: absolute;
-        right: -1000px;
+        right: -800px;
         bottom: 0;
         left: 0;
         margin: auto;
         width: 802px;
         height: 799px;
         //
-opacity: 0;
+        opacity: 0;
         @include animation(
           $delay: 0.2s,
-          $duration: 0.2s,
+          $duration: 0.8s,
           $animation: poo,
           $frequency: 1,
           $forwards: forwards,
-          $timing: linear
+          $timing: ease-out
         );
         @include keyframes(poo) {
           0% {
             opacity: 0;
-            right: -1000px;
+            right: -800px;
           }
           100% {
-            right: -500px;opacity:1;
+            right: -500px;
+            opacity: 1;
           }
         }
         //
@@ -832,7 +833,7 @@ opacity: 0;
 
       .live {
         position: absolute;
-        right: -500px;
+        right: -200px;
         bottom: 0;
         width: 495px;
         height: 966px;
@@ -841,17 +842,19 @@ opacity: 0;
 
         @include animation(
           $delay: 0s,
-          $duration: 0.2s,
+          $duration: 0.5s,
           $animation: ll,
           $frequency: 1,
           $forwards: forwards,
-          $timing: linear
+          $timing: ease-out
         );
         @include keyframes(ll) {
           0% {
-            right: -500px;
+            opacity: 0;
+            right: -200px;
           }
           100% {
+            opacity: 1;
             right: 0px;
           }
         }
@@ -956,25 +959,25 @@ opacity: 0;
       // display: inline-block;
       float: left;
       width: 60%;
-        //
-    
-        @include animation(
-          $delay: 0s,
-          $duration: 1s,
-          $animation: pp,
-          $frequency:infinite,
-          $forwards: forwards,
-          $timing: linear
-        );
-        @include keyframes(pp) {
-          0% {
-            filter:brightness(1);
-          }
-          50% {
-            filter:brightness(1.1);
-          }
+      //
+
+      @include animation(
+        $delay: 0s,
+        $duration: 1s,
+        $animation: pp,
+        $frequency: infinite,
+        $forwards: forwards,
+        $timing: linear
+      );
+      @include keyframes(pp) {
+        0% {
+          filter: brightness(1);
         }
-        //
+        50% {
+          filter: brightness(1.1);
+        }
+      }
+      //
       @include respond-to(md) {
         position: relative;
         padding-bottom: 20px;

@@ -718,18 +718,18 @@ html {
   left: 0;
   bottom: 0;
   right: 0;
-  -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
   -webkit-animation-name: tet;
           animation-name: tet;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
 }
 
 @-webkit-keyframes tet {
@@ -768,16 +768,16 @@ html {
   opacity: 0;
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
   -webkit-animation-name: zz;
           animation-name: zz;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes zz {
@@ -826,8 +826,8 @@ html {
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes he2 {
@@ -876,8 +876,8 @@ html {
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes he2 {
@@ -926,8 +926,8 @@ html {
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes hh2 {
@@ -968,8 +968,8 @@ html {
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes hh2 {
@@ -1010,8 +1010,8 @@ html {
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes he1 {
@@ -1052,8 +1052,8 @@ html {
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes he1 {
@@ -1094,8 +1094,8 @@ html {
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes he1 {
@@ -1136,8 +1136,8 @@ html {
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes he1 {
@@ -1594,7 +1594,7 @@ html {
 
 .bg3 .date-more .live-box .poro {
   position: absolute;
-  right: -1000px;
+  right: -800px;
   bottom: 0;
   left: 0;
   margin: auto;
@@ -1603,22 +1603,22 @@ html {
   opacity: 0;
   -webkit-animation-delay: 0.2s;
           animation-delay: 0.2s;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
+  -webkit-animation-duration: 0.8s;
+          animation-duration: 0.8s;
   -webkit-animation-name: poo;
           animation-name: poo;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes poo {
   0% {
     opacity: 0;
-    right: -1000px;
+    right: -800px;
   }
   100% {
     right: -500px;
@@ -1629,7 +1629,7 @@ html {
 @keyframes poo {
   0% {
     opacity: 0;
-    right: -1000px;
+    right: -800px;
   }
   100% {
     right: -500px;
@@ -1675,39 +1675,43 @@ html {
 
 .bg3 .date-more .live-box .live {
   position: absolute;
-  right: -500px;
+  right: -200px;
   bottom: 0;
   width: 495px;
   height: 966px;
   background-repeat: no-repeat;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
-  -webkit-animation-duration: 0.2s;
-          animation-duration: 0.2s;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-name: ll;
           animation-name: ll;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes ll {
   0% {
-    right: -500px;
+    opacity: 0;
+    right: -200px;
   }
   100% {
+    opacity: 1;
     right: 0px;
   }
 }
 
 @keyframes ll {
   0% {
-    right: -500px;
+    opacity: 0;
+    right: -200px;
   }
   100% {
+    opacity: 1;
     right: 0px;
   }
 }
