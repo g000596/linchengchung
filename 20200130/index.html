@@ -259,7 +259,8 @@
     </div>
   </div>
   <!--  -->
-  <div class="lux" data-aos="fade-right"  data-aos-delay="500"  data-aos-duration="2000"></div>
+  <div class="lux" data-aos="fade-right"  data-aos-delay="100"  data-aos-duration="1800"  data-aos-mirror="true"></div>
+  <!-- <div class="lux" data-aos="fade-right"></div> -->
   <div class="youtube"  style="display: block;">
     <iframe src="https://www.youtube.com/embed/8l48hkIxtfo" frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -778,8 +779,10 @@
 <!--  -->
 <script>
     AOS.init({
-      offset: 50,
-      easing: 'ease-out-back',
+      offset: 0,
+      // easing: 'ease-out-back',
+      easing: 'ease-in-out',
+      mirror: false, 
         duration: 1800
     });
   </script>

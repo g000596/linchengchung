@@ -714,14 +714,17 @@ html {
   width: 953px;
   height: 274px;
   background-image: url(../img/title.png);
-  opacity: 0;
+  opacity: 1;
   margin: auto;
   top: 200px;
   left: 0;
   bottom: 0;
   right: 0;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  -webkit-transform: translate(0px) scale(1.2);
+          transform: translate(0px) scale(1.2);
+  opacity: 0;
+  -webkit-animation-delay: s;
+          animation-delay: s;
   -webkit-animation-duration: 0.8s;
           animation-duration: 0.8s;
   -webkit-animation-name: tet;
@@ -737,20 +740,28 @@ html {
 @-webkit-keyframes tet {
   0% {
     opacity: 0;
+    -webkit-transform: translate(0px) scale(1.2);
+            transform: translate(0px) scale(1.2);
   }
   100% {
     background-image: url(../img/title.png);
     opacity: 1;
+    -webkit-transform: translate(0px) scale(1);
+            transform: translate(0px) scale(1);
   }
 }
 
 @keyframes tet {
   0% {
     opacity: 0;
+    -webkit-transform: translate(0px) scale(1.2);
+            transform: translate(0px) scale(1.2);
   }
   100% {
     background-image: url(../img/title.png);
     opacity: 1;
+    -webkit-transform: translate(0px) scale(1);
+            transform: translate(0px) scale(1);
   }
 }
 
@@ -766,8 +777,8 @@ html {
   opacity: 0;
   -webkit-animation-delay: 0.1s;
           animation-delay: 0.1s;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
+  -webkit-animation-duration: 0.4s;
+          animation-duration: 0.4s;
   -webkit-animation-name: zz;
           animation-name: zz;
   -webkit-animation-iteration-count: 1;
@@ -781,8 +792,8 @@ html {
 @-webkit-keyframes zz {
   0% {
     opacity: 0;
-    -webkit-transform: translate(0px) scale(2);
-            transform: translate(0px) scale(2);
+    -webkit-transform: translate(0px) scale(1.2);
+            transform: translate(0px) scale(1.2);
   }
   100% {
     opacity: 1;
@@ -794,8 +805,8 @@ html {
 @keyframes zz {
   0% {
     opacity: 0;
-    -webkit-transform: translate(0px) scale(2);
-            transform: translate(0px) scale(2);
+    -webkit-transform: translate(0px) scale(1.2);
+            transform: translate(0px) scale(1.2);
   }
   100% {
     opacity: 1;
@@ -816,8 +827,8 @@ html {
   opacity: 0;
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
   -webkit-animation-name: he2;
           animation-name: he2;
   -webkit-animation-iteration-count: 1;
@@ -866,8 +877,8 @@ html {
   opacity: 0;
   -webkit-animation-delay: 0.4s;
           animation-delay: 0.4s;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
   -webkit-animation-name: he2;
           animation-name: he2;
   -webkit-animation-iteration-count: 1;
@@ -916,8 +927,8 @@ html {
   opacity: 1;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
   -webkit-animation-name: hh2;
           animation-name: hh2;
   -webkit-animation-iteration-count: 1;
@@ -958,8 +969,8 @@ html {
   opacity: 1;
   -webkit-animation-delay: 1.2s;
           animation-delay: 1.2s;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
   -webkit-animation-name: hh2;
           animation-name: hh2;
   -webkit-animation-iteration-count: 1;
@@ -1000,8 +1011,8 @@ html {
   opacity: 0;
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
   -webkit-animation-name: he1;
           animation-name: he1;
   -webkit-animation-iteration-count: 1;
@@ -1042,8 +1053,8 @@ html {
   opacity: 0;
   -webkit-animation-delay: 0.8s;
           animation-delay: 0.8s;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
   -webkit-animation-name: he1;
           animation-name: he1;
   -webkit-animation-iteration-count: 1;
@@ -1084,8 +1095,8 @@ html {
   opacity: 0;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
   -webkit-animation-name: he1;
           animation-name: he1;
   -webkit-animation-iteration-count: 1;
@@ -1126,8 +1137,8 @@ html {
   opacity: 0;
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
   -webkit-animation-name: he1;
           animation-name: he1;
   -webkit-animation-iteration-count: 1;

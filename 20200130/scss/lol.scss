@@ -90,11 +90,12 @@ html {
         width: 953px;
         height: 274px;
         background-image: url(../img/title.png);
-        opacity: 0;
+        opacity: 1;
         @include amid($t: 200px, $l: 0, $b: 0, $r: 0);
-
+        transform: translate(0px) scale(1.2);
+        opacity: 0;
         @include animation(
-          $delay: 0.6s,
+          $delay: s,
           $duration: 0.8s,
           $animation: tet,
           $frequency: 1,
@@ -106,6 +107,7 @@ html {
             // transform: scale(-2);
             opacity: 0;
             // transform: translate(0px) scale(2);
+            transform: translate(0px) scale(1.2);
           }
 
           100% {
@@ -113,6 +115,7 @@ html {
             background-image: url(../img/title.png);
             opacity: 1;
             // transform: translate(0px) scale(1);
+            transform: translate(0px) scale(1);
           }
         }
         //
@@ -128,7 +131,7 @@ html {
         opacity: 0;
         @include animation(
           $delay: 0.1s,
-          $duration: 0.6s,
+          $duration: 0.4s,
           $animation: zz,
           $frequency: 1,
           $forwards: forwards,
@@ -137,7 +140,7 @@ html {
         @include keyframes(zz) {
           0% {
             opacity: 0;
-            transform: translate(0px) scale(2);
+            transform: translate(0px) scale(1.2);
           }
           100% {
             opacity: 1;
@@ -157,7 +160,7 @@ html {
         opacity: 0;
         @include animation(
           $delay: 0.4s,
-          $duration: 0.8s,
+          $duration: 1.2s,
           $animation: he2,
           $frequency: 1,
           $forwards: forwards,
@@ -186,7 +189,7 @@ html {
         opacity: 0;
         @include animation(
           $delay: 0.4s,
-          $duration: 0.8s,
+          $duration: 1.2s,
           $animation: he2,
           $frequency: 1,
           $forwards: forwards,
@@ -215,7 +218,7 @@ html {
         opacity: 1;
         @include animation(
           $delay: 1s,
-          $duration: 0.8s,
+          $duration: 1.2s,
           $animation: hh2,
           $frequency: 1,
           $forwards: forwards,
@@ -242,7 +245,7 @@ html {
         opacity: 1;
         @include animation(
           $delay: 1.2s,
-          $duration: 0.8s,
+          $duration: 1.2s,
           $animation: hh2,
           $frequency: 1,
           $forwards: forwards,
@@ -269,7 +272,7 @@ html {
         opacity: 0;
         @include animation(
           $delay: 0.8s,
-          $duration: 0.8s,
+          $duration: 1.2s,
           $animation: he1,
           $frequency: 1,
           $forwards: forwards,
@@ -296,7 +299,7 @@ html {
         opacity: 0;
         @include animation(
           $delay: 0.8s,
-          $duration: 0.8s,
+          $duration: 1.2s,
           $animation: he1,
           $frequency: 1,
           $forwards: forwards,
@@ -323,7 +326,7 @@ html {
         opacity: 0;
         @include animation(
           $delay: 1s,
-          $duration: 0.8s,
+          $duration: 1.2s,
           $animation: he1,
           $frequency: 1,
           $forwards: forwards,
@@ -350,7 +353,7 @@ html {
         opacity: 0;
         @include animation(
           $delay: 1s,
-          $duration: 0.8s,
+          $duration: 1.2s,
           $animation: he1,
           $frequency: 1,
           $forwards: forwards,
