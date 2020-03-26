@@ -1761,8 +1761,8 @@ html {
   background-image: url(../img/line-r.png);
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
   -webkit-animation-name: rr;
           animation-name: rr;
   -webkit-animation-iteration-count: infinite;
